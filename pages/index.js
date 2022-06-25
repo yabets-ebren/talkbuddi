@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import Board from "../components/Board";
 import Card from "../components/Card";
-
+import {feature1} from '../public/assets/features/feature1.png'
 
 const Index = () => {
     return(
         <>
         <div className="container space-y-5 flex flex-col mx-auto mt-12 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
+            
+            {/* HERO TEXT  */}
+            
             <div className="flex flex-col space-y-8  md:w-1/2 ">
                 <h1 className=" text-purple leading-10	 text-center text-4xl font-poppins  md:text-5xl md:text-left">
                     The ultimate college student app.
@@ -22,6 +26,9 @@ const Index = () => {
                     </Link>
                 </div>
             </div>
+
+            {/* HERO IMAGES */}
+
             {/* FIXME: MOBILE HEIGHT NEEDS A FIX */}
             <div className="h-96 w-full  relative  max-h-max-hero-height  overflow-hidden md:w-1/2 md:h-75">
                 <div className="overflow-hidden left-6 top-1/4 absolute  w-44 h-96 lg:scale-150 lg:top-1/3 lg:left-1/3" >
@@ -58,18 +65,37 @@ const Index = () => {
             </div>
 
         </div>
-        <div className="h-8 w-full border-t-4 border-purple mb-32 bg-light-gray"></div>
+        <div className="h-10 w-full border-t-4 border-purple  bg-light-gray"></div>
+
+        {/* ABOUT US SECTION */}
+
         <div>
-            <h2 className="font-poppins font-semibold text-3xl text-black text-center tracking-wide	 mb-2 md:text-4xl">Why join Buddi?</h2>
-            <p className=" font-montserat font-xl text-center px-4">Here are a few reasons why we're awesome</p>
+            <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide	 mb-2 md:text-4xl md:mt-32">Why join Buddi?</h2>
+            <p className=" font-montserat font-xl text-black text-center px-4">Here are a few reasons why we're awesome</p>
         </div>
         <div className="mt-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-8 md:w-90 md:mt-16 ">
-            <Card image='this is image' description='this is description' heading='this is heading'/>
-            <Card image='this is image' description='this is description' heading='this is heading'/>
-            <Card image='this is image' description='this is description' heading='this is heading'/>
-            <Card image='this is image' description='this is description' heading='this is heading'/>
+            <Card image={<Image src='/assets/dog.png' alt='' layout="fill" objectFit="cover"/>} description='Why we are better' heading='By Students, For Students'/>
+            <Card image={<Image src='/assets/dog.png' alt='' layout="fill" objectFit="cover"/>}description='Why we are better' heading='Connecting Students Campus and Country Wide'/>
+            <Card image={<Image src='/assets/dog.png' alt='' layout="fill" objectFit="cover"/>}description='Why we are better' heading='Beneficial Mental Health and Wellbeing Features'/>
+            <Card image={<Image src='/assets/dog.png' alt='' layout="fill" objectFit="cover"/>}description='Why we are better' heading='Exclusive to Undergraduates'/>
         </div>
-        <div className="mt-12 md:mt-16"></div>
+
+        {/* FEATURE SECTION */}
+        <div>
+            <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide	 mb-2 md:text-4xl md:mt-32">Our Features</h2>
+            <p className=" font-montserat font-xl text-black text-center px-4">Click on each feature to learn more</p>
+        </div>
+        <div className="mt-16 grid grid-cols-1 container mx-auto md:grid-cols-2 md:gap-x-10 md:gap-y-8 md:w-90 md:mt-32">
+            <Board image={<Image src='/assets/features/feature1.png' alt='image of a phone' layout="fill"/>} desc='this is desc'/>
+            <Board image={<Image src='/assets/features/feature1.png' alt='image of a phone' layout="fill"/>} desc='this is desc'/>
+            <Board image={<Image src='/assets/features/feature1.png' alt='image of a phone' layout="fill"/>} desc='this is desc'/>
+            <Board image={<Image src='/assets/features/feature1.png' alt='image of a phone' layout="fill"/>} desc='this is desc'/>
+        </div>
+        <div className="mt-16 h-60 bg-purple w-full flex flex-col items-center justify-center text-center md:mt-32">
+            <h2 className="text-white text-2xl font-medium pb-2 md:text-3xl "> Ready to join the hype?</h2>
+            <p className="text-yellow text-xl underline">Click here to download</p>
+
+        </div>
         </>
     )
 }

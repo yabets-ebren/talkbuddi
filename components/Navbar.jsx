@@ -18,16 +18,16 @@ const Navbar = () => {
           </svg>
           </button>
           <ul className="hidden font-poppins md:flex space-x-6 capitalize">
-              <li  className=" text-gray leading-7 hover:text-purple cursor-pointer">
+              <li  className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
                 <Link href="#">home</Link>
               </li>
-              <li className=" text-gray leading-7 hover:text-purple cursor-pointer">
+              <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
                 <Link href="#">features</Link>
               </li>
-              <li className=" text-gray leading-7 hover:text-purple cursor-pointer">
+              <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
                 <Link href="#">careers</Link>
               </li>
-              <li className=" text-gray leading-7 hover:text-purple cursor-pointer">
+              <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
                 <Link href="#">contact</Link>
               </li>
           </ul>
