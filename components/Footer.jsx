@@ -6,7 +6,7 @@ import { FaInstagram, FaTiktok, FaLinkedin  } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-      <div className="flex-column container mx-auto px-20  py-5 space-y-1">
+      <div className="hidden md:block flex-column container w-90 mx-auto  py-1 md:py-2 md:px-6 space-y-1">
         <div className="flex w-full justify-between items-center py-5">
           <div className="flex-column space-y-1 pl-4">
             <div>

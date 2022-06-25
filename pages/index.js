@@ -1,8 +1,55 @@
+import Image from "next/image";
+import Link from "next/link";
 
 
 const Index = () => {
     return(
         <>
+        <div className="container space-y-5 flex flex-col mx-auto mt-12 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
+            <div className="flex flex-col space-y-8  md:w-1/2 ">
+                <h1 className=" text-purple leading-10	 text-center text-4xl font-poppins  md:text-5xl md:text-left">
+                    The ultimate college student app.
+                </h1>
+                <p className="font-montserat max-w-lg font-xl text-center md:text-left">Buddi is a college student exclusive app to connect with your campus and students everywhere.</p>
+                <div className="flex space-x-5 items-center justify-center md:justify-start">
+                    <button className="px-3 py-2 rounded-md shadow-md">Coming Soon!</button>
+                    {/* FIXME: Add transition to hover */}
+                    <Link href="/contact">
+                        <button className="bg-yellow text-white px-3 py-2 rounded-md shadow-md  md:hover:-mt-2 md:hover:shadow-lg">
+                            Contact
+                        </button>
+                    </Link>
+                </div>
+            </div>
+            {/* FIXME: MOBILE HEIGHT NEEDS A FIX */}
+            <div className="h-96 w-full relative  max-h-max-hero-height  overflow-hidden md:w-1/2 md:h-75">
+                <div className="overflow-hidden left-6 top-1/4 absolute  w-44 h-96 md:scale-150 md:top-1/3 md:left-1/3" >
+                    <Image className="z-10" src="/assets/newiphone.png" alt="image of an iphone" layout="fill" objectFit='fill'/>
+                    <div className=" bg-yellow m-2 rounded-2xl w-40 h-96">
+                    </div>
+                </div>
+                <div className="hidden border-8 border-yellow overflow-hidden rounded-full right-16 top-0 absolute w-36 h-36 md:block">
+                    <Image className="z-10" src="/assets/faces/1.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
+                </div>
+                <div className="border-4 w-12 h-12 right-0 top-1/2 border-water overflow-hidden  rounded-full md:right-6 md:bottom-6 absolute md:w-36 md:h-36 md:border-8">
+                    <Image className="z-10" src="/assets/faces/2.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
+                </div>
+                <div className="border-4 w-16 h-16 top-0 right-0 border-orange overflow-hidden rounded-full md:w-20 md:h-20 md:border-8 absolute md:top-1/4 md:left-0">
+                    <Image className="z-10" src="/assets/faces/3.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
+                </div>
+                <div className="border-4 border-purple w-20 h-20 overflow-hidden rounded-full md:w-36 md:h-36 md:border-8 left-0 absolute">
+                    <Image className="z-10" src="/assets/faces/4.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
+                </div>
+                <div className="hidden border-8 border-red overflow-hidden w-20 h-20 bg-red-600 rounded-full bottom-2 left-8 absolute md:block">
+                    <Image className="z-10" src="/assets/faces/5.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
+                </div>
+                <div className="hidden border-8 border-bold-green overflow-hidden rounded-full w-36 h-36 absolute top-1/2 left-0 md:block">
+                    <Image className="z-10" src="/assets/faces/3.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
+                </div>
+            </div>
+
+        </div>
+        <div className="h-8 w-full border-t-4 border-purple bg-gray"></div>
         </>
     )
 }

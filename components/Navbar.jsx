@@ -4,8 +4,8 @@ import Link from "next/link"
 const Navbar = () => {
   return (
 
-    <nav className="container relative mx-auto shadow-big" >
-        <div className="flex  justify-between items-center py-2 px-20 ">
+    <nav className="container relative mx-auto py-2 shadow-big" >
+        <div className="flex mx-auto w-90 justify-between items-center">
           <div className="">
             <Link href="/">
               <Image className="cursor-pointer" src="/assets/buddi_logo.png" width={188} height={66} objectFit="fill"  alt="logo"/>
