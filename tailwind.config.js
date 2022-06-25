@@ -22,6 +22,7 @@ module.exports = {
         'purple': '#5C35FA',
         'yellow': '#FADC35',
         'gray': '#989898',
+        'light-gray':'#D9D9D9',
         'light-blue':'#7BC8FF',
         'pink': '#F4ABBA',
         'green':'#9FFF02',
@@ -31,7 +32,8 @@ module.exports = {
         'bold-green':'#29C67A',
         'skyblue':'#8CE3E9',
         'red': '#FF0000',
-        'water': '#B2F3D4'
+        'water': '#B2F3D4',
+        'black':'#07071E'
       },
       boxShadow: {
         'big': '0px 3px 71.4px rgba(0, 0, 0, 0.2)',
