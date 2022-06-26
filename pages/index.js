@@ -7,7 +7,7 @@ import {feature1} from '../public/assets/features/feature1.png'
 const Index = () => {
     return(
         <>
-        <div className="container space-y-5 flex flex-col mx-auto mt-12 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
+        <div className="container space-y-12 flex flex-col mx-auto mt-16 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
             
             {/* HERO TEXT  */}
             
@@ -30,15 +30,16 @@ const Index = () => {
             {/* HERO IMAGES */}
 
             {/* FIXME: MOBILE HEIGHT NEEDS A FIX */}
-            <div className="h-96 w-full  relative  max-h-max-hero-height  overflow-hidden md:w-1/2 md:h-75">
-                <div className="overflow-hidden left-6 top-1/4 absolute  w-44 h-96 lg:scale-150 lg:top-1/3 lg:left-1/3" >
+            <div className="relative flex items-center justify-center max-h-max-hero-height  overflow-hidden md:w-1/2">
+                <div className="overflow-hidden relative w-44 h-96" >
                     <Image className="z-10" src="/assets/newiphone.png" alt="image of an iphone" layout="fill" objectFit='fill'/>
-                    <div className=" bg-yellow z-1 m-2 rounded-2xl w-40 h-96"></div>
-                    <div className="bg-purple w-16 h-14 z-10 top-1/3 right-16 absolute">
-                        <h1 className="text-white">LOGO</h1>
+                    <div className=" bg-yellow z-1 m-2 flex items-center justify-center rounded-2xl w-40 h-hiphone">
+                        <div className="bg-purple w-14 h-14 flex items-center justify-center">
+                            <h1 className="text-white">LOGO</h1>
+                        </div>
                     </div>
                 </div>
-                <div className="hidden border-8 border-yellow overflow-hidden rounded-full right-16 top-0 absolute w-36 h-36 lg:block">
+                {/* <div className="hidden border-8 border-yellow overflow-hidden rounded-full right-16 top-0 absolute w-36 h-36 lg:block">
                     <Image className="z-10" src="/assets/faces/1.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
                 </div>
                 <div className="border-4 w-12 h-12 right-0 top-1/2 border-water overflow-hidden  rounded-full absolute lg:top-3/4 lg:right-4 lg:w-36 lg:h-36 lg:border-8">
@@ -61,7 +62,7 @@ const Index = () => {
                 </div>
                 <div className="hidden border-8 border-bold-green overflow-hidden rounded-full w-36 h-36 absolute top-1/2 left-0 lg:block">
                     <Image className="z-10" src="/assets/faces/3.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div>
+                </div> */}
             </div>
 
         </div>

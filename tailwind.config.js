@@ -44,16 +44,18 @@ module.exports = {
       },
       height:{
         '75':'75vh',
+        hiphone:"370px"
       },
       maxHeight:{
         'max-hero-height':'650px'
       },
       margin:{
-        iphone: '6px 8px 8px 8px'
+        iphone: '6px 80px 8px 8px'
       },
       borderWidth:{
         big: '30px'
-      }
+      },
+
     },
   },
   plugins: [],
