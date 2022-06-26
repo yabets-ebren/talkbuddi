@@ -8,7 +8,7 @@ const Card  = ({image, heading, description} ) => {
                 {image}
             </div>
         </div>
-        <div className='w-full text-center py-4 md:px-8 md:py-10 md:w-3/4 md:text-start'>
+        <div className='w-full px-1 text-center py-4 md:px-8 md:py-10 md:w-3/4 md:text-start'>
             <h3 className='font-montserat text-xl pb-2 font-medium'>{heading}</h3>
             <p className='font-montserat text-base'>{description}</p>
         </div>

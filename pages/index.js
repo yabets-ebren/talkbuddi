@@ -7,7 +7,7 @@ import {feature1} from '../public/assets/features/feature1.png'
 const Index = () => {
     return(
         <>
-        <div className="container space-y-12 flex flex-col mx-auto mt-16 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
+        <div className="container space-y-12 flex flex-col mx-auto mt-16 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
             
             {/* HERO TEXT  */}
             
@@ -39,6 +39,8 @@ const Index = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* FIXME: */}
                 {/* <div className="hidden border-8 border-yellow overflow-hidden rounded-full right-16 top-0 absolute w-36 h-36 lg:block">
                     <Image className="z-10" src="/assets/faces/1.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
                 </div>
@@ -71,7 +73,7 @@ const Index = () => {
         {/* ABOUT US SECTION */}
 
         <div>
-            <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide	 mb-2 md:text-4xl md:mt-32">Why join Buddi?</h2>
+            <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide mt-16 md:text-4xl md:mt-32">Why join Buddi?</h2>
             <p className=" font-montserat font-xl text-black text-center px-4">Here are a few reasons why we're awesome</p>
         </div>
         <div className="mt-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-8 md:w-90 md:mt-16 ">
@@ -83,7 +85,7 @@ const Index = () => {
 
         {/* FEATURE SECTION */}
         <div>
-            <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide	 mb-2 md:text-4xl md:mt-32">Our Features</h2>
+            <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide mt-16 md:text-4xl md:mt-32">Our Features</h2>
             <p className=" font-montserat font-xl text-black text-center px-4">Click on each feature to learn more</p>
         </div>
         <div className="mt-16 grid grid-cols-1 container mx-auto md:grid-cols-2 md:gap-x-10 md:gap-y-8 md:w-90 md:mt-32">
