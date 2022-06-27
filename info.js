@@ -37,7 +37,7 @@ export const feature = [
         alt:'',
         bgColor:'bg-yellow',
         backTitle:'Chat with students everywhere',
-        backDesc:'',
+        backDesc:['Anonymously catch up on the talk around campus!','Check out what undergraduates across the country are talking about', 'Post real-time photos into the feed', 'React and comment on posts'],
         fontColor:'text-yellow',
         borderColor:'border-yellow'
     },
@@ -48,7 +48,7 @@ export const feature = [
         alt:'',
         bgColor:'bg-skyblue',
         backTitle:'Explore events on your campus',
-        backDesc:'',
+        backDesc:['Find events being hosted around your campus','Post parties, fundraisers, club events and more to your entire campus','See which events are gaining crowds and which are not'],
         fontColor:'text-skyblue',
         borderColor:'border-skyblue'
     },
@@ -59,7 +59,7 @@ export const feature = [
         alt:'',
         bgColor:'bg-pink',
         backTitle:'Random live chat or find peer support',
-        backDesc:'',
+        backDesc:['Random live chat with students across the country','Have something on your mind? Talk to a trained student listener to clear your head'],
         fontColor:'text-pink',
         borderColor:'border-pink'
     },
@@ -74,4 +74,6 @@ export const feature = [
         fontColor:'text-green',
         borderColor:'border-green'
     },
+    
+
 ]

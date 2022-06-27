@@ -106,6 +106,7 @@ const Index = ({data}) => {
                     Click here to download
                 </Link>
             </p>
+            <p className="hidden bg-pink bg-skyblue bg-green text-green text-pink text-skyblue border-green border-skyblue border-pink">none:test</p>
         </div>
 
         {/* ************** */}

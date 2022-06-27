@@ -26,6 +26,7 @@ const transformStyle = plugin(function({addUtilities}) {
     },
   })
 });
+// FIXME: needs to be fixed
 const prespective = plugin(function({addUtilities}) {
   addUtilities({
     '.prespective-1000': {

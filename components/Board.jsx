@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 
 
 const Board = ({image, bgColor, fontColor,borderColor, title, backTitle, backdesc}) => {
-
+  const x = Object.entries(backdesc)
+  console.log(backdesc[0])
   const [flip, setFlip] = useState('');
   return (
       <div onClick={()=>{setFlip('rotate-y-180')}} className={`w-90 mx-auto h-96 relative cursor-pointer ${flip} transition-all ease-in-out duration-1000  transfrom-style3d`}>
@@ -21,9 +22,9 @@ const Board = ({image, bgColor, fontColor,borderColor, title, backTitle, backdes
               {backTitle}
             </h2>
             <ul className='mt-4 space-y-3 font-montserat list-disc'>
-              {/* {backdesc.map((desc) => 
+              {backdesc.map((desc) => 
                 <li>{desc}</li>
-              )} */}
+              )}
             </ul>
           </div>
       </div>
