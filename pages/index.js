@@ -77,7 +77,7 @@ const Index = ({data}) => {
 
         <div>
             <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide mt-24 md:text-4xl md:mt-32">Why join Buddi?</h2>
-            <p className=" font-montserat font-xl text-black text-center px-4 pt-2">Here are a few reasons why we're awesome</p>
+            <p className=" font-montserat w-90 mx-auto font-xl text-black text-center px-4 pt-4">Here are a few reasons why we're awesome</p>
         </div>
         <div className="mt-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:w-90 md:mt-16 ">
             {info.map(inf=>(
