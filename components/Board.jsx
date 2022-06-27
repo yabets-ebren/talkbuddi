@@ -16,7 +16,7 @@ const Board = ({image, bgColor, fontColor,borderColor, title, backTitle, backdes
               </div>
             </div>
           </div>
-          <div className={`rotate-y-180 absolute z-10 border-8 ${borderColor} h-full w-full p-10`}>
+          <div className={`rotate-y-180 absolute z-10 border-8 ${borderColor} h-full overflow-y-scroll w-full p-10`}>
             <h2 className={`text-xl ${fontColor} text-center font-montserat`}>
               {backTitle}
             </h2>
