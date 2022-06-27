@@ -1,4 +1,27 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
+
+const backfaceVisibility = plugin(function({addUtilities}) {
+  addUtilities({
+    '.backface-visible': {
+      'backface-visibility': 'visible',
+    },
+    '.backface-hidden': {
+      'backface-visibility': 'hidden',
+    }
+  })
+});
+const rotateX = plugin(function({addUtilities}) {
+  addUtilities({
+    '.rotate-x-180': {
+      transform: 'rotateX(180deg)',
+    },
+  })
+});
+
+
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -58,5 +81,5 @@ module.exports = {
 
     },
   },
-  plugins: [],
+  plugins: [backfaceVisibility, rotateX],
 }
