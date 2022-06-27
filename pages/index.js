@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Board from "../components/Board";
 import Card from "../components/Card";
+import { info, feature } from '../info'
 
 
-
-const Index = () => {
+const Index = ({data}) => {
     return(
         <>
         <div className="container space-y-12 flex flex-col mx-auto mt-16 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
@@ -72,6 +72,7 @@ const Index = () => {
         </div>
         {/* <div className="h-10 w-full border-t-4 border-purple  bg-light-gray"></div> */}
 
+
         {/* ABOUT US SECTION */}
 
         <div>
@@ -79,23 +80,25 @@ const Index = () => {
             <p className=" font-montserat font-xl text-black text-center px-4 pt-2">Here are a few reasons why we're awesome</p>
         </div>
         <div className="mt-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:w-90 md:mt-16 ">
-            <Card image={<Image src='/assets/dog.png' alt='' layout="fill" objectFit="cover"/>} description='Why we are better' heading='By Students, For Students'/>
-            <Card image={<Image src='/assets/dog.png' alt='' layout="fill" objectFit="cover"/>}description='Why we are better' heading='Connecting Students Campus and Country Wide'/>
-            <Card image={<Image src='/assets/dog.png' alt='' layout="fill" objectFit="cover"/>}description='Why we are better' heading='Beneficial Mental Health and Wellbeing Features'/>
-            <Card image={<Image src='/assets/dog.png' alt='' layout="fill" objectFit="cover"/>}description='Why we are better' heading='Exclusive to Undergraduates'/>
+            {info.map(inf=>(
+                <Card head={inf.heading} desc={inf.desc} image={<Image src={`/assets/${inf.image}`} alt={inf.alt} layout="fill"/>} />
+            ))}
         </div>
 
         {/* FEATURE SECTION */}
+
         <div id="features" >
             <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide mt-24 md:text-4xl md:mt-32">Our Features</h2>
             <p className=" font-montserat font-xl text-black text-center px-4  pt-2">Click on each feature to learn more</p>
         </div>
-        <div className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 md:grid-cols-2 md:gap-x-10 md:gap-y-8 md:w-90 md:mt-16">
-            <Board bgColor='bg-yellow' image={<Image src='/assets/features/feature1.png' alt='image of a phone' layout="fill"/>} desc='this is desc'/>
-            <Board bgColor='bg-skyblue' image={<Image src='/assets/features/feature1.png' alt='image of a phone' layout="fill"/>} desc='this is desc'/>
-            <Board bgColor='bg-pink' image={<Image src='/assets/features/feature1.png' alt='image of a phone' layout="fill"/>} desc='this is desc'/>
-            <Board bgColor='bg-green' image={<Image src='/assets/features/feature1.png' alt='image of a phone' layout="fill"/>} desc='this is desc'/>
+        <div className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 prespective-100 md:grid-cols-2 md:gap-x-10 md:gap-y-8 md:w-90 md:mt-16">
+            {feature.map(feat =>(
+                <Board image={<Image src={`/assets/features/${feat.image}`} alt={feat.alt} layout="fill"/>} title={feat.title} bgColor={feat.bgColor} backTitle={feat.backTitle} backdesc={feat.backDesc} fontColor={feat.fontColor} borderColor={feat.borderColor}/>
+            ))}
         </div>
+
+        {/* Bottom Call To Action */}
+
         <div className="mt-16 h-60 bg-purple w-full flex flex-col items-center justify-center text-center md:mt-32">
             <h2 className="text-white text-2xl font-medium pb-2 md:text-3xl "> Ready to join the hype?</h2>
             <p className="text-yellow text-xl underline">
@@ -103,10 +106,19 @@ const Index = () => {
                     Click here to download
                 </Link>
             </p>
-
         </div>
+
+        {/* ************** */}
         </>
     )
 }
 
 export default Index;
+
+export const getStaticProps =  () => {
+    const data = info;
+
+    return {
+        props: {data}
+    }
+}

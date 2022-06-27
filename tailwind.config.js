@@ -14,8 +14,25 @@ const backfaceVisibility = plugin(function({addUtilities}) {
 });
 const rotateX = plugin(function({addUtilities}) {
   addUtilities({
-    '.rotate-x-180': {
-      transform: 'rotateX(180deg)',
+    '.rotate-y-180': {
+      transform: 'rotateY(180deg)',
+    },
+  })
+});
+const transformStyle = plugin(function({addUtilities}) {
+  addUtilities({
+    '.transfrom-style3d': {
+      'transform-style': 'preserve-3d',
+    },
+  })
+});
+const prespective = plugin(function({addUtilities}) {
+  addUtilities({
+    '.prespective-1000': {
+      'prespective': '1000px',
+    },
+    '.prespective-100': {
+      'prespective': '10px',
     },
   })
 });
@@ -81,5 +98,5 @@ module.exports = {
 
     },
   },
-  plugins: [backfaceVisibility, rotateX],
+  plugins: [backfaceVisibility, rotateX, transformStyle, prespective],
 }
