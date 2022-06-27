@@ -3,28 +3,28 @@ export const info = [
         id: 1,
         heading: 'By Students, For Students',
         desc: 'Why we are better',
-        image: '',
+        image: 'book.png',
         alt:''
     },
     {
         id: 2,
         heading: 'Connecting Students Campus and Country Wide',
         desc: 'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do things on at.',
-        image: '',
+        image: 'dog.png',
         alt:''
     },
     {
         id: 3,
         heading: 'Beneficial Mental Health and Wellbeing Features',
         desc: 'y say mention enabled through elderly improve. As at so believe account evening behaved hearted is. House is tiled we aware.',
-        image: '',
+        image: 'book.png',
         alt:''
     },
     {
         id: 4,
         heading: 'Exclusive to Undergraduates',
         desc: 'Society excited by cottage private an it esteems. Fully begin on by wound an. Girl rich in do up or both. At declared in as',
-        image: '',
+        image: 'dog.png',
         alt:''
     }
 ]

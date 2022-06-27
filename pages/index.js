@@ -91,7 +91,7 @@ const Index = ({data}) => {
             <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide mt-24 md:text-4xl md:mt-32">Our Features</h2>
             <p className=" font-montserat font-xl text-black text-center px-4  pt-2">Click on each feature to learn more</p>
         </div>
-        <div className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 prespective-100 md:grid-cols-2 md:gap-x-10 md:gap-y-8 md:w-90 md:mt-16">
+        <div className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 prespective-100 md:grid-cols-2 md:gap-x-10 md:gap-y-10 md:w-90 md:mt-16">
             {feature.map(feat =>(
                 <Board image={<Image src={`/assets/features/${feat.image}`} alt={feat.alt} layout="fill"/>} title={feat.title} bgColor={feat.bgColor} backTitle={feat.backTitle} backdesc={feat.backDesc} fontColor={feat.fontColor} borderColor={feat.borderColor}/>
             ))}
