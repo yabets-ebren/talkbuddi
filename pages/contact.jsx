@@ -1,6 +1,12 @@
+import Bars from "../components/Bars"
+
 const Contact = () => {
   return (
-    <h1>Contact us</h1>
+    <>
+      <h1>Frequently Asked Questions</h1>
+      <Bars/>
+    
+    </>
   )
 }
 

@@ -122,3 +122,16 @@ export const team = [
         alt:"picture of a person"
     },
 ]
+
+export const volunteer = [
+    {
+        id:1,
+        head:"Buddi for Psych",
+        desc:"Our app is exclusively made for undergraduate college students. The audience is limited to maintain a safe, secure, and trusted",
+    },
+    {
+        id:2,
+        head:"Campus Ambassador Program",
+        desc:"Our app is exclusively made for undergraduate college students. The audience is limited to maintain a safe, secure, and trusted",
+    },
+]

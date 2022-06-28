@@ -1,6 +1,7 @@
 import Image from "next/image"
-import { team } from "../info"
+import { team, volunteer } from "../info"
 import dynamic from 'next/dynamic'
+import Bars from "../components/Bars";
 const CircleImages = dynamic(() => import("../components/CircleImages"), {
   ssr: false,
   });
@@ -32,12 +33,14 @@ const Careers = () => {
           <CircleImages width="w-52" height="h-52" name={t.name} title={t.title}/>))
         }
       </div>
-      <div className="text-center my-40">
-        <h2 className="font-poppins text-4xl">Volunteer and Internship Programs</h2>
+      <div className="text-center mt-60">
+        <h2 className="font-poppins text-4xl px-4">Volunteer and Internship Programs</h2>
       </div>
-      <div>
-        <div></div>
-        <div></div>        
+      <div className="container w-90 mx-auto grid grid-cols-1 mt-20 mb-60 gap-y-16 md:gap-x-20 lg:gap-y-0 lg:grid-cols-2">
+        {volunteer.map((v)=>(
+          <Bars heading={v.head} desc={v.desc}/>
+        ))
+        }
       </div>
 
       </>
