@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { team } from "../info"
 import dynamic from 'next/dynamic'
-const CircleImages = dynamic(() => import("../components/circleImages"), {
+const CircleImages = dynamic(() => import("../components/CircleImages"), {
   ssr: false,
   });
 
@@ -34,6 +34,10 @@ const Careers = () => {
       </div>
       <div className="text-center my-40">
         <h2 className="font-poppins text-4xl">Volunteer and Internship Programs</h2>
+      </div>
+      <div>
+        <div></div>
+        <div></div>        
       </div>
 
       </>
