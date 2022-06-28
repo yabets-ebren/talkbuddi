@@ -85,7 +85,8 @@ module.exports = {
       },
       height:{
         '75':'75vh',
-        hiphone:"370px"
+        hiphone:"370px",
+        hero: "576px"
       },
       maxHeight:{
         'max-hero-height':'650px'

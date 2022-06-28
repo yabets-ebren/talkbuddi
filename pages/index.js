@@ -41,32 +41,6 @@ const Index = ({data}) => {
                         </div>
                     </div>
                 </div>
-
-                {/* FIXME: */}
-                {/* <div className="hidden border-8 border-yellow overflow-hidden rounded-full right-16 top-0 absolute w-28 h-28 lg:block">
-                    <Image className="z-10" src="/assets/faces/1.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div>
-                <div className="border-4 w-12 h-12 right-0 top-1/2 border-water overflow-hidden  rounded-full absolute lg:bottom-0 lg:right-4 lg:w-28 lg:h-28 lg:border-8">
-                    <Image className="z-10" src="/assets/faces/2.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div>
-                <div className="border-4 w-16 h-16 left-0 top-0 border-orange overflow-hidden rounded-full lg:w-16 lg:h-16 lg:border-8 absolute lg:top-0 lg:left-16">
-                    <Image className="z-10" src="/assets/faces/6.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div>
-                <div className="border-8 w-24 h-24 top-1/3 right-0 border-light-orange overflow-hidden rounded-full absolute">
-                    <Image className="z-10" src="/assets/faces/3.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div>
-                <div className="border-8 w-16 h-16 top-1/2 right-28 border-skyblue overflow-hidden rounded-full absolute">
-                    <Image className="z-10" src="/assets/faces/3.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div>
-                <div className="border-4 border-purple w-20 h-20 overflow-hidden rounded-full lg:w-28 lg:h-28 lg:border-8 bottom-1/4 left-5 absolute">
-                    <Image className="z-10" src="/assets/faces/4.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div>
-                <div className="hidden border-8 border-red overflow-hidden w-20 h-20 bg-red-600 rounded-full bottom-2 left-8 absolute lg:block">
-                    <Image className="z-10" src="/assets/faces/5.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div>
-                <div className="hidden border-8 border-bold-green overflow-hidden rounded-full w-28 h-28 absolute top-1/2 left-0 lg:block">
-                    <Image className="z-10" src="/assets/faces/3.jpg" alt="image of an iphone" layout="fill" objectFit='cover'/>
-                </div> */}
             </div>
 
         </div>

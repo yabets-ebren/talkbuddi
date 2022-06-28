@@ -21,16 +21,16 @@ const Navbar = () => {
           </button>
           <ul className="hidden font-poppins md:flex space-x-6 capitalize">
               <li  className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
-                <Link href="#">home</Link>
+                <Link href="/">home</Link>
               </li>
               <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
-                <Link href="#features">features</Link>
+                <Link href="/#features">features</Link>
               </li>
               <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
-                <Link href="#">careers</Link>
+                <Link href="/careers">careers</Link>
               </li>
               <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
-                <Link href="#">contact</Link>
+                <Link href="/contact">contact</Link>
               </li>
           </ul>
         </div>

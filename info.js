@@ -77,3 +77,48 @@ export const feature = [
     
 
 ]
+
+export const team = [
+    {
+        id:1,
+        name:"Vincent Manna",
+        title:"CEO & Founder",
+        image:"",
+        alt:"picture of a person"
+    },
+    {
+        id:2,
+        name:"Emma Winikow",
+        title:"Advisor",
+        image:"",
+        alt:"picture of a person"
+    },
+    {
+        id:3,
+        name:"Emme Creager",
+        title:"Director, Buddi for Psych",
+        image:"",
+        alt:"picture of a person"
+    },
+    {
+        id:4,
+        name:"Jack Mitchell",
+        title:"Director, Campus Ambassadors",
+        image:"",
+        alt:"picture of a person"
+    },
+    {
+        id:5,
+        name:"Vincent Tripi",
+        title:"Director, Campus Ambassadors",
+        image:"",
+        alt:"picture of a person"
+    },
+    {
+        id:6,
+        name:"Arden DeForest",
+        title:"Director, Social & Ethics",
+        image:"",
+        alt:"picture of a person"
+    },
+]

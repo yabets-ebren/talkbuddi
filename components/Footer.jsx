@@ -16,16 +16,16 @@ const Footer = () => {
             </div>
             <ul className="flex-column font-nunito text-sm md:flex space-x-3 capitalize">
               <li  className=" text-gray transition ease-in-out delay-150 hover:text-purple cursor-pointer">
-                <Link href="#">home</Link>
+                <Link href="/">home</Link>
               </li>
               <li className=" text-gray transition ease-in-out delay-150 hover:text-purple cursor-pointer">
                 <Link href="#features">features</Link>
               </li>
               <li className=" text-gray transition ease-in-out delay-150 hover:text-purple cursor-pointer">
-                <Link href="#">careers</Link>
+                <Link href="/careers">careers</Link>
               </li>
               <li className=" text-gray transition ease-in-out delay-1500 hover:text-purple cursor-pointer">
-                <Link href="#">contact</Link>
+                <Link href="/contact">contact</Link>
               </li>
               </ul>
           </div>
