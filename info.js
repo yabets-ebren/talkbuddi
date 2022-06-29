@@ -135,3 +135,33 @@ export const volunteer = [
         desc:"Our app is exclusively made for undergraduate college students. The audience is limited to maintain a safe, secure, and trusted",
     },
 ]
+
+export const FAQ =[
+    {
+        id:1,
+        question:"Who is Buddi made for?",
+        answer:" Our app is exclusively made for undergraduate college students. The audience is limited to maintain a safe, secure, and trusted platform for our users. There will be more variations of Buddi in the future"
+    },
+    {
+        id:2,
+        question:"How do I reset my password?",
+        answer:'To reset your password, you may log out of your account. While signing in, please select “Forgot Password”'
+    },
+    {
+        id:3,
+        question:"My school’s login is wrong. How do I fix it?",
+        answer:"Please use the contact form above to contact Buddi support. This is an error in our system, we apologize. We will fix it as soon as possible."
+    },
+    {
+        id:4,
+        question:"I am not doing too well. Where can I find help?",
+        answer:"Please contact emergency services, school support services or consult a licensed medical professional.",
+        colored:"Mental Health Hotline: 988    Emergency Services: 911",
+    },
+    {
+        id:5,
+        question:"Is Buddi available on Android platform?",
+        answer:"At the moment, Buddi is not available on the Android platform and is exclusive to the iOS App Store. We plan to offer an Android version as soon as possible."
+    },
+
+]
