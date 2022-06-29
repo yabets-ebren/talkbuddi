@@ -26,7 +26,7 @@ const Careers = () => {
         </div>
       </div>
       <div className="text-center mb-20">
-        <h2 className="font-poppins text-4xl">Team Leaders</h2>
+        <h2 className="font-poppins text-3xl md:text-4xl">Team Leaders</h2>
       </div>
       <div className="container mb-40  grid grid-cols-1 w-90 gap-y-10 mx-auto md:grid-cols-2 lg:grid-cols-3">
         {team.map(t=>(
@@ -34,7 +34,7 @@ const Careers = () => {
         }
       </div>
       <div className="text-center mt-60">
-        <h2 className="font-poppins text-4xl px-4">Volunteer and Internship Programs</h2>
+        <h2 className="font-poppins text-3xl px-4 md:text-4xl">Volunteer and Internship Programs</h2>
       </div>
       <div className="container w-90 mx-auto grid grid-cols-1 mt-20 mb-60 gap-y-16 md:gap-x-20 lg:gap-y-0 lg:grid-cols-2">
         {volunteer.map((v)=>(
