@@ -9,3 +9,14 @@
     @apply scroll-smooth;
   }
 }
+
+@layer components {
+  .inputTexts {
+    padding: 2px;
+    transition: all ease 500ms;
+  }
+  .inputTetxts:focus {
+    outline: none;
+    border: purple solid 2px;
+  }
+}

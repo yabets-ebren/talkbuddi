@@ -21,7 +21,7 @@ const Index = ({data}) => {
                     <button className="px-3 py-2 rounded-md shadow-md">Coming Soon!</button>
                     {/* FIXME: Add transition to hover */}
                     <Link href="/contact">
-                        <button className="bg-yellow text-white px-3 py-2 rounded-md shadow-md  md:hover:-mt-2 md:hover:shadow-lg">
+                        <button className="bg-yellow border-purple  text-white px-3 py-2 rounded-md shadow-md  md:hover:-mt-2 md:hover:shadow-lg">
                             Contact
                         </button>
                     </Link>
