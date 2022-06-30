@@ -27,7 +27,7 @@ const Index = ({data}) => {
                     </Link>
                 </div>
             </div>
-
+            
             {/* HERO IMAGES */}
 
             {/* FIXME: MOBILE HEIGHT NEEDS A FIX */}
