@@ -9,7 +9,7 @@ const Contact = () => {
       </div>
       <div className="mx-auto container grid grid-cols-1 mt-24 mb-32 w-90 space-y-10 md:w-2/3">
         {FAQ.map((faq=>(
-          <Bars  heading={faq.question} desc={faq.answer}/>
+          <Bars  heading={faq.question} desc={faq.answer} colored={faq.colored}/>
         )))
         }
       </div>

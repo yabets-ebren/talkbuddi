@@ -36,8 +36,8 @@ const Index = ({data}) => {
                 <div className="overflow-hidden relative w-44 h-96" >
                     <Image className="z-10" src="/assets/newiphone.png" alt="image of an iphone" layout="fill" objectFit='fill'/>
                     <div className=" bg-yellow z-1 m-2 flex items-center justify-center rounded-2xl w-40 h-hiphone">
-                        <div className="bg-purple w-14 h-14 flex items-center justify-center">
-                            <h1 className="text-white">LOGO</h1>
+                        <div className="relative w-24 h-24 flex items-center justify-center">
+                            <Image src="/assets/vertLogo.png" alt="buddi logo"  layout="fill"/>
                         </div>
                     </div>
                 </div>

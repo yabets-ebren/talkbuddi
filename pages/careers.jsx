@@ -26,7 +26,7 @@ const Careers = () => {
         </div>
       </div>
       <div className="text-center mb-20">
-        <h2 className="font-poppins text-3xl md:text-4xl">Team Leaders</h2>
+        <h2 className="font-poppins text-3xl  md:text-4xl">Team Leaders</h2>
       </div>
       <div className="container mb-40  grid grid-cols-1 w-90 gap-y-10 mx-auto md:grid-cols-2 lg:grid-cols-3">
         {team.map(t=>(
