@@ -75,7 +75,8 @@ module.exports = {
         'red': '#FF0000',
         'water': '#B2F3D4',
         'black':'#07071E',
-        'light-black':'#1F1F34'
+        'light-black':'#1F1F34',
+        'orangeText':'#FA7A35'
       },
       boxShadow: {
         'big': '0px 3px 71.4px rgba(0, 0, 0, 0.2)',
