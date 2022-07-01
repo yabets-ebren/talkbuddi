@@ -55,7 +55,7 @@ const Index = ({data}) => {
         </div>
         <div className="mt-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:w-90 md:mt-16 ">
             {info.map(inf=>(
-                <Card head={inf.heading} desc={inf.desc} image={<Image src={`/assets/${inf.image}`} alt={inf.alt} layout="fill"/>} />
+                <Card head={inf.heading} desc={inf.desc} image={<Image src={`/assets/about/${inf.image}`} alt={inf.alt} layout="fill"/>} />
             ))}
         </div>
 

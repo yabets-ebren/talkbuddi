@@ -6,10 +6,10 @@ const Contact = () => {
   return (
     <>
       <div className="mx-auto container w-90 flex flex-col mt-32 md:flex-row shdow-big">
-        <div className="flex  flex-col justify-center items-center px-4 space-y-12 text-center md:w-1/2 md:px-20 md:items-start">
+        <div className="flex  flex-col justify-center items-center px-4 space-y-10 text-center md:w-1/2 md:px-20 md:items-start">
           <h1 className="text-4xl  font-medium font-poppins text-purple md:text-5xl md:text-start md:max-w-xl">We are here to answer your questions!</h1>
           <p className="max-w-sm text-gray md:text-start font-montserat">Please fill out the form to the right to reach our team! Please be as detailed as possible to receive the quickest response time possible.</p>
-          <div className="relative w-72 h-72" >
+          <div className="relative w-full h-full" >
             <Image src="/assets/contact.svg" alt="contact us illustration" layout='fill'/>
           </div>
         </div>

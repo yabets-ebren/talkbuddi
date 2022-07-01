@@ -7,16 +7,16 @@ import { FaInstagram, FaTiktok, FaLinkedin  } from 'react-icons/fa';
 const Footer = () => {
   return (
     <>
-      <div className="h-12 w-full bg-purple">
-        <div className="hidden md:block  flex-column container w-90 mx-auto  py-1 md:py-16 md:px-6 space-y-1">
-          <div className="flex w-full  justify-between items-center py-5">
+      <div className="h-0 w-full bg-purple mb-2">
+        <div className=" flex-column container w-90 mx-auto bg-red  py-1 md:py-16 md:px-6 space-y-1">
+          <div className="flex flex-col w-full  justify-between items-center py-5 md:flex md:flex-col">
             <div className="flex-column space-y-1 pl-4">
-              <div>
-                <Link href="/">
-                  <Image className="cursor-pointer" src="/assets/buddi_logo.png" width={188} height={66} objectFit="fill"  alt="logo"/>
-                </Link>
-              </div>
-              <ul className="flex-column font-nunito text-sm md:flex space-x-3 capitalize">
+                <button>
+                  <Link href="/">
+                    <Image className="cursor-pointer" src="/assets/buddi_logo.png" width={188} height={66} objectFit="fill"  alt="logo"/>
+                  </Link>
+                </button>
+              <ul className="flex flex-col font-nunito text-sm md:flex md:flex-row space-x-3 capitalize">
                 <li  className=" text-gray transition ease-in-out delay-150 hover:text-purple cursor-pointer">
                   <Link href="/">home</Link>
                 </li>
@@ -50,9 +50,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="h-px w-full bg-gray"></div>
-          <div className="flex space-x-20 pt-4 pl-4">
+          <div className="flex flex-col-reverse space-x-20 pt-4 pl-4 md:flex md:flex-row">
             <p className="text-gray font-nunito">© 2022 Buddi LLC, All Rights Reserved. </p>
-            <ul className="flex space-x-2">
+            <ul className="flex flex-col space-x-2 md:flex md:flex-col">
                 <li className="text-gray font-nunito">
                   <Link href="#">
                     Terms of Use |
