@@ -44,7 +44,7 @@ export const feature = [
     {
         id: 2,
         title:'Explore events on your campus ',
-        image:'feature1.png',
+        image:'feature2.png',
         alt:'',
         bgColor:'bg-skyblue',
         backTitle:'Explore events on your campus',
@@ -55,7 +55,7 @@ export const feature = [
     {
         id: 3,
         title:'Random live chat or find peer support',
-        image:'feature1.png',
+        image:'feature3.png',
         alt:'',
         bgColor:'bg-pink',
         backTitle:'Random live chat or find peer support',
@@ -66,7 +66,7 @@ export const feature = [
     {
         id: 4,
         title:'Find mental wellness resources',
-        image:'feature1.png',
+        image:'feature4.png',
         alt:'',
         bgColor:'bg-green',
         backTitle:'Find mental wellness resources',

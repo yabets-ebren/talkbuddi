@@ -7,16 +7,16 @@ import { FaInstagram, FaTiktok, FaLinkedin  } from 'react-icons/fa';
 const Footer = () => {
   return (
     <>
-      <div className="h-0 w-full bg-purple mb-2">
-        <div className=" flex-column container w-90 mx-auto bg-red  py-1 md:py-16 md:px-6 space-y-1">
-          <div className="flex flex-col w-full  justify-between items-center py-5 md:flex md:flex-col">
-            <div className="flex-column space-y-1 pl-4">
-                <button>
+        <div className="h-12 w-full bg-purple"></div>
+        <div className=" flex-column container w-90 mx-auto  py-1 space-y-1 md:pt-16 md:px-6 ">
+          <div className="flex flex-col w-full gap-y-3 justify-between items-center py-5 md:flex md:flex-row md:gap-y-0">
+            <div className="flex-column space-y-1 md:pl-4">
+                <button className=" scale-95 md:scale-100">
                   <Link href="/">
                     <Image className="cursor-pointer" src="/assets/buddi_logo.png" width={188} height={66} objectFit="fill"  alt="logo"/>
                   </Link>
                 </button>
-              <ul className="flex flex-col font-nunito text-sm md:flex md:flex-row space-x-3 capitalize">
+              <ul className="flex flex-col gap-y-2 pb-4 font-nunito justify-center items-center capitalize text-sm md:flex md:flex-row md:space-x-3 md:gap-y-0 md:pb-0">
                 <li  className=" text-gray transition ease-in-out delay-150 hover:text-purple cursor-pointer">
                   <Link href="/">home</Link>
                 </li>
@@ -32,17 +32,17 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="flex space-x-4">
-              <button className="text-purple text-3xl transition ease-in-out delay-100 hover:scale-110">
+              <button className="text-purple text-2xl transition ease-in-out delay-100 hover:scale-110 md:text-3xl">
                 <Link href="https://www.instagram.com/buddi.us/?hl=en">
                   <FaInstagram />
                 </Link>
               </button>
-              <button className="text-purple text-3xl transition ease-in-out delay-100 hover:scale-110">
+              <button className="text-purple text-2xl transition ease-in-out delay-100 hover:scale-110 md:text-3xl">
                 <Link href="https://www.tiktok.com/@buddiapp">
                   <FaTiktok />
                 </Link>
               </button>
-              <button className="text-purple text-3xl transition ease-in-out delay-100 hover:scale-110">
+              <button className="text-purple text-2xl transition ease-in-out delay-100 hover:scale-110 md:text-3xl">
                 <Link href="https://www.linkedin.com/company/talkbuddi">
                   <FaLinkedin />
                 </Link>
@@ -50,29 +50,29 @@ const Footer = () => {
             </div>
           </div>
           <div className="h-px w-full bg-gray"></div>
-          <div className="flex flex-col-reverse space-x-20 pt-4 pl-4 md:flex md:flex-row">
-            <p className="text-gray font-nunito">© 2022 Buddi LLC, All Rights Reserved. </p>
-            <ul className="flex flex-col space-x-2 md:flex md:flex-col">
-                <li className="text-gray font-nunito">
+          <div className="flex flex-col-reverse gap-y-3  pt-4 md:pl-4 md:space-x-20 md:flex md:flex-row md:gap-y-0">
+            <p className="text-gray font-nunito text-center text-sm md:text-base">© 2022 Buddi LLC, All Rights Reserved. </p>
+            <div className="flex flex-col items-center justify-center text-sm gap-y-1 md:space-x-2 md:text-base md:gap-y-0 md:flex-row">
+                <div className="text-gray font-nunito">
                   <Link href="#">
                     Terms of Use |
                   </Link>
-                </li>
-                <li className="text-gray font-nunito">
+                </div>
+                <div className="text-gray font-nunito">
                   <Link href="#">
-                    Privacy Policy |
+                    Privacy Policy |  
                   </Link>
-                </li>
-                <li className="text-gray font-nunito text-base">
+                </div>
+                <div className="text-gray font-nunito text-base">
                   <Link href="#">
                     Community Guidelines
                   </Link>
-                </li>
-            </ul>
+                </div>
+            </div>
 
           </div>
         </div>
-      </div>
+
     </>
       
   )
