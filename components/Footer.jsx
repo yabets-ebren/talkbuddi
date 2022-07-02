@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <>
         <div className="h-12 w-full bg-purple"></div>
-        <div className=" flex-column container w-90 mx-auto  py-1 space-y-1 md:pt-16 md:px-6 ">
+        <div className=" flex-column container w-90 mx-auto pb-4  py-1 space-y-1 md:pt-16 md:px-6 ">
           <div className="flex flex-col w-full gap-y-3 justify-between items-center py-5 md:flex md:flex-row md:gap-y-0">
-            <div className="flex-column space-y-1 md:pl-4">
-                <button className=" scale-95 md:scale-100">
+            <div className="flex flex-col-reverse space-y-1 md:pl-4 md:flex-col">
+                <button className=" scale-75 md:scale-100">
                   <Link href="/">
                     <Image className="cursor-pointer" src="/assets/buddi_logo.png" width={188} height={66} objectFit="fill"  alt="logo"/>
                   </Link>
