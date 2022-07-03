@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 
 const Board = ({image, bgColor, fontColor,borderColor, title, backTitle, backdesc}) => {
 
-  const [flip, setFlip] = useState('');
+  const [flip, setFlip] = useState(false);
   return (
-      <div onClick={()=>{setFlip('rotate-y-180')}} className={`w-90 mx-auto h-96 relative cursor-pointer ${flip} transition-all ease-in-out duration-1000  transfrom-style3d md:hover:-mt-3`}>
+      <div onClick={()=> setFlip(!flip)} className={`w-90 mx-auto h-96 relative cursor-pointer ${flip ? "rotate-y-180" : ""} transition-all ease-in-out duration-1000  transfrom-style3d md:hover:-mt-3`}>
           <div className={` flex flex-col z-20 items-center justify-between ${bgColor}  absolute delay-1000 pt-10 md:pt-12  h-full w-full  backface-hidden`}>
             <div className='text-white font-montserat text-center px-5 text-xl md:px-0'>
               {title}

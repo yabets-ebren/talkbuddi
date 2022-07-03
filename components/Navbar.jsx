@@ -1,7 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/router";
+import { useState } from "react"
 
 const Navbar = () => {
+
+  const[open, setOpen] = useState(false);
+
+
+  const router = useRouter()
   return (
 
     <nav className="container  relative mx-auto py-2 shadow-big" >
@@ -13,28 +20,37 @@ const Navbar = () => {
               </Link>
             </button>
           </div>
-
-          <button className="md:hidden p-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-          </button>
           <ul className="hidden font-poppins md:flex space-x-6 capitalize">
-              <li  className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
-                <Link href="/">home</Link>
+              <li  className={`${router.pathname == '/' ? 'active' : ""} text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
+                <Link href="/"> home</Link>
               </li>
-              <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
+              <li className={`text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
                 <Link href="/#features">features</Link>
               </li>
-              <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
+              <li className={`${router.pathname == '/careers' ? 'active' : ""}text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
                 <Link href="/careers">careers</Link>
               </li>
-              <li className=" text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer">
+              <li className={`${router.pathname == '/contact' ? 'active' : ""}text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
                 <Link href="/contact">contact</Link>
               </li>
           </ul>
-        </div>
 
+          {/* Mobile Hamburger Icon */}
+          <button onClick={() => (setOpen(!open))} id="menu-button" className={`hamburger ${open ? "open" : ""} md:hidden focus:outline-none`}>
+            <span className="hamTop"></span>
+            <span className="hamMid"></span>
+            <span className="hamBot"></span>
+          </button>
+        </div>
+        {/* Mobile Menu */}
+        <div className="md:hidden">
+          <div onClick={() => (setOpen(false))} className={`absolute ${open ? "" : "hidden"} transition-all flex flex-col items-center self-end py-8 pt-10 space-y-6 z-10 capitalize font-nunito font-semibold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
+              <Link href="/">home</Link>
+              <Link href="/#features">features</Link>
+              <Link href="/careers">careers</Link>
+              <Link href="/contact">contact</Link>
+          </div>
+        </div>
     </nav>
   )
 }

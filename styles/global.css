@@ -10,13 +10,53 @@
   }
 }
 
-@layer components {
-  .inputTexts {
-    padding: 2px;
-    transition: all ease 500ms;
-  }
-  .inputTetxts:focus {
-    outline: none;
-    border: purple solid 2px;
-  }
+.active {
+  color: #5c35fa;
+  font-size: xx-large;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 500ms;
+  position: relative;
+}
+
+.hamTop,
+.hamMid,
+.hamBot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 500ms;
+}
+
+.hamMid {
+  transform: translateY(7px);
+}
+.hamBot {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamTop {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamMid {
+  display: none;
+}
+.open .hamBot {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.transit {
+  transition: all 5000ms;
 }
