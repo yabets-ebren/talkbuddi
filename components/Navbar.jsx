@@ -9,11 +9,12 @@ const Navbar = () => {
 
 
   const router = useRouter()
+  console.log(router.pathname)
   return (
 
     <nav className="container  relative mx-auto py-2 shadow-big" >
         <div className="flex mx-auto w-90 justify-between items-center">
-          <div className=" scale-75 -ml-4 md:scale-100 md:ml-0">
+          <div className="scale-75 -ml-4 md:scale-100 md:ml-0">
             <button>
               <Link href="/">
                 <Image className="cursor-pointer" src="/assets/buddi_logo.png" width={188} height={66} objectFit="fill"  alt="logo"/>
@@ -27,10 +28,10 @@ const Navbar = () => {
               <li className={`text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
                 <Link href="/#features">features</Link>
               </li>
-              <li className={`${router.pathname == '/careers' ? 'active' : ""}text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
+              <li className={`${router.pathname == '/careers' ? 'active' : ""} text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
                 <Link href="/careers">careers</Link>
               </li>
-              <li className={`${router.pathname == '/contact' ? 'active' : ""}text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
+              <li className={`${router.pathname == '/contact' ? 'active' : ""} text-gray leading-7 transition ease-in-out delay-150 hover:text-purple cursor-pointer`}>
                 <Link href="/contact">contact</Link>
               </li>
           </ul>
@@ -44,12 +45,12 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         <div className="md:hidden">
-          <div onClick={() => (setOpen(false))} className={`absolute ${open ? "" : "hidden"} transition-all flex flex-col items-center self-end py-8 pt-10 space-y-6 z-10 capitalize font-nunito font-semibold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
-              <Link href="/">home</Link>
-              <Link href="/#features">features</Link>
-              <Link href="/careers">careers</Link>
-              <Link href="/contact">contact</Link>
-          </div>
+          <ul onClick={() => (setOpen(false))} className={`absolute ${open ? "opacity-100" : "opacity-0"} t transition-all duration-500 text-gray flex flex-col items-center self-end py-8 pt-10 space-y-6 z-10 capitalize font-poppins font-medium bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
+              <li className={`${router.pathname == '/' ? 'active' : ""}`}><Link href="/">home</Link></li>
+              <li><Link href="/#features">features</Link></li>
+              <li className={`${router.pathname == '/careers' ? 'active' : ""}`}><Link href="/careers">careers</Link></li>
+              <li className={`${router.pathname == '/contact' ? 'active' : ""}`}><Link href="/contact">contact</Link></li>
+          </ul>
         </div>
     </nav>
   )
