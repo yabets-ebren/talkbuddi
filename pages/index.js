@@ -31,7 +31,7 @@ const Index = () => {
             {/* HERO IMAGES */}
             <div className="relative w-full md:w-1/2">
                 <div className="w-full flex-shrink-0 flex items-center justify-center max-h-max-hero-height">
-                    <div className="overflow-hidden relative  w-44 h-96" >
+                    <div className="overflow-hidden relative  w-44 h-96 z-10" >
                         <Image className="z-10" src="/assets/newiphone.png" alt="image of an iphone" layout="fill" objectFit='fill'/>
                         <div className=" bg-yellow z-1 m-2 flex items-center justify-center rounded-2xl w-40 h-hiphone">
                             <div className="relative w-24 h-24 flex items-center justify-center">
@@ -40,8 +40,8 @@ const Index = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden w-full  top-0 left-0 absolute h-full opacity-100 lg:block">
-                    <div className="">
+                <div className="hidden w-full  top-0 left-0 absolute h-full opacity-100 lg:block ">
+                    <div>
                         {faces.map(face=>(
                             <CircleImages key={face.id} size={face.size} position={face.position}  border={face.border} image={<Image src={`/assets/faces/${face.image}`} alt={face.alt} layout="fill" objectFit="cover"  />} />
                         ))}

@@ -69,12 +69,12 @@
 }
 .tier2 {
   top: 25%;
-  left: 5%;
+  left: 1%;
   position: absolute;
 }
 .tier3 {
   top: 48%;
-  left: 15%;
+  left: 10%;
   position: absolute;
 }
 .tier4 {
@@ -89,12 +89,12 @@
 }
 .tier6 {
   top: 15%;
-  right: 10%;
+  right: 7%;
   position: absolute;
 }
 .tier7 {
   top: 40%;
-  right: 20%;
+  right: 16%;
   position: absolute;
 }
 .tier8 {
