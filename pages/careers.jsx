@@ -30,7 +30,7 @@ const Careers = () => {
       </div>
       <div className="container mb-40  grid grid-cols-1 w-90 gap-y-10 mx-auto md:grid-cols-2 lg:grid-cols-3">
         {team.map(t=>(
-          <CircleImages width="w-52" height="h-52" name={t.name} title={t.title}/>))
+          <CircleImages key={t.id} width="w-52" height="h-52" name={t.name} title={t.title}/>))
         }
       </div>
       <div className="text-center mt-60">
@@ -38,7 +38,7 @@ const Careers = () => {
       </div>
       <div className="container w-90 mx-auto grid grid-cols-1 mt-20 mb-60 gap-y-16 md:gap-x-20 lg:gap-y-0 lg:grid-cols-2">
         {volunteer.map((v)=>(
-          <Bars heading={v.head} desc={v.desc}/>
+          <Bars key={v.id} heading={v.head} desc={v.desc}/>
         ))
         }
       </div>

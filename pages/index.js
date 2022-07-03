@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Board from "../components/Board";
 import Card from "../components/Card";
-import { info, feature } from '../info'
+import CircleImages from '../components/CircleImages'
+import { info, feature, faces } from '../info'
 
 
 const Index = ({data}) => {
     return(
         <>
-        <div className="container space-y-12 flex flex-col mx-auto mt-16 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
+        <div className="container  space-y-12 flex flex-col mx-auto mt-32 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
             
             {/* HERO TEXT  */}
             
@@ -19,9 +20,8 @@ const Index = ({data}) => {
                 <p className="font-montserat max-w-lg font-xl text-center md:text-left">Buddi is a college student exclusive app to connect with your campus and students everywhere.</p>
                 <div className="flex space-x-5 items-center justify-center md:justify-start">
                     <button className="px-3 py-2 rounded-md shadow-md">Coming Soon!</button>
-                    {/* FIXME: Add transition to hover */}
                     <Link href="/contact">
-                        <button className="bg-yellow border-purple  text-white px-3 py-2 rounded-md shadow-md  md:hover:-mt-2 md:hover:shadow-lg">
+                        <button className="bg-yellow border-purple  text-white px-3 py-2 rounded-md shadow-md transition-all duration-1000 lg:hover:scale-110 lg:hover:-mt-2 lg:hover:shadow-lg">
                             Contact
                         </button>
                     </Link>
@@ -31,16 +31,25 @@ const Index = ({data}) => {
             {/* HERO IMAGES */}
 
             {/* FIXME: MOBILE HEIGHT NEEDS A FIX */}
-            <div className="relative w-full  flex items-center justify-center max-h-max-hero-height  overflow-hidden md:w-1/2">
-                {/* <Floatblur className="bottom-0 left-0 absolute"/> */}
-                <div className="overflow-hidden relative w-44 h-96" >
-                    <Image className="z-10" src="/assets/newiphone.png" alt="image of an iphone" layout="fill" objectFit='fill'/>
-                    <div className=" bg-yellow z-1 m-2 flex items-center justify-center rounded-2xl w-40 h-hiphone">
-                        <div className="relative w-24 h-24 flex items-center justify-center">
-                            <Image src="/assets/vertLogo.png" alt="buddi logo"  layout="fill"/>
+            <div className="relative w-full md:w-1/2">
+                <div className="w-full flex-shrink-0 flex items-center justify-center max-h-max-hero-height">
+                    <div className="overflow-hidden relative  w-44 h-96" >
+                        <Image className="z-10" src="/assets/newiphone.png" alt="image of an iphone" layout="fill" objectFit='fill'/>
+                        <div className=" bg-yellow z-1 m-2 flex items-center justify-center rounded-2xl w-40 h-hiphone">
+                            <div className="relative w-24 h-24 flex items-center justify-center">
+                                <Image src="/assets/vertLogo.png" alt="buddi logo"  layout="fill"/>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div className=" w-full top-0 left-0 absolute h-full opacity-100">
+                    <div className="">
+                        {faces.map(face=>(
+                            <CircleImages key={face.id} size={face.size} position={face.position}  border={face.border} image={<Image src={`/assets/faces/${face.image}`} alt={face.alt} layout="fill" objectFit="cover"  />} />
+                        ))}
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -55,7 +64,7 @@ const Index = ({data}) => {
         </div>
         <div className="mt-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:w-90 md:mt-16 ">
             {info.map(inf=>(
-                <Card head={inf.heading} desc={inf.desc} image={<Image src={`/assets/about/${inf.image}`} alt={inf.alt} layout="fill"/>} />
+                <Card key={inf.id} head={inf.heading} desc={inf.desc} image={<Image src={`/assets/about/${inf.image}`} alt={inf.alt} layout="fill"/>} />
             ))}
         </div>
 
@@ -67,7 +76,7 @@ const Index = ({data}) => {
         </div>
         <div className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 prespective-100 md:grid-cols-2 md:gap-x-10 md:gap-y-10 md:w-90 md:mt-16">
             {feature.map(feat =>(
-                <Board image={<Image src={`/assets/features/${feat.image}`} alt={feat.alt} layout="fill"/>} title={feat.title} bgColor={feat.bgColor} backTitle={feat.backTitle} backdesc={feat.backDesc} fontColor={feat.fontColor} borderColor={feat.borderColor}/>
+                <Board key={feat.id} image={<Image src={`/assets/features/${feat.image}`} alt={feat.alt} layout="fill"/>} title={feat.title} bgColor={feat.bgColor} backTitle={feat.backTitle} backdesc={feat.backDesc} fontColor={feat.fontColor} borderColor={feat.borderColor}/>
             ))}
         </div>
 

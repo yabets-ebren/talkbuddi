@@ -165,3 +165,39 @@ export const FAQ =[
     },
 
 ]
+
+export const faces = [
+    {
+        id:1,
+        image:"1.jpg",
+        alt:"picture of a person",
+        size:"w-32 h-32",
+        position:"tier1",
+        border: "border-8 border-purple"
+    },
+    {
+        id:2,
+        image:"3.jpg",
+        alt:"picture of a person",
+        size:"w-24 h-24",
+        position:"tier3",
+        border: "border-8 border-yellow"
+    },
+    {
+        id:3,
+        image:"1.jpg",
+        alt:"picture of a person",
+        size:"w-32 h-32",
+        position:"tier2",
+        border: "border-8 border-yellow"
+    },
+    {
+        id:4,
+        image:"",
+        alt:"picture of a person",
+        size:"w-24 h-24",
+        position:"absolute bottom-0 right-0",
+        border: "border-8 border-skyblue"
+    },  
+
+]

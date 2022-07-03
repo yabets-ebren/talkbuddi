@@ -14,6 +14,7 @@
   color: #5c35fa;
 }
 
+/* MOBILE */
 .hamburger {
   cursor: pointer;
   width: 24px;
@@ -58,4 +59,51 @@
 }
 .transit {
   transition: all 5000ms;
+}
+
+/* Home-page Hero Position */
+.tier1 {
+  top: 50%;
+  left: 10%;
+  position: absolute;
+}
+.tier2 {
+  top: -20%;
+  right: 10%;
+  position: absolute;
+}
+.tier3 {
+  top: 33%;
+  left: 5%;
+  position: absolute;
+}
+.tier4 {
+  top: 0;
+  left: 10%;
+  position: absolute;
+}
+.tier5 {
+  top: 0;
+  left: 10%;
+  position: absolute;
+}
+.tier6 {
+  top: 0;
+  left: 10%;
+  position: absolute;
+}
+.tier7 {
+  top: 0;
+  left: 10%;
+  position: absolute;
+}
+.tier8 {
+  top: 0;
+  left: 10%;
+  position: absolute;
+}
+.tier1 {
+  top: 0;
+  left: 10%;
+  position: absolute;
 }
