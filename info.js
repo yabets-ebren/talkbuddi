@@ -171,7 +171,7 @@ export const faces = [
         id:1,
         image:"1.jpg",
         alt:"picture of a person",
-        size:"w-28 h-28 ",
+        size:"w-24 h-24 ",
         position:"tier1",
         border: "border-six border-purple"
     },
@@ -187,7 +187,7 @@ export const faces = [
         id:3,
         image:"3.jpg",
         alt:"picture of a person",
-        size:"w-28 h-28 ",
+        size:"w-24 h-24 ",
         position:"tier3",
         border: "border-six border-green"
     },
@@ -203,7 +203,7 @@ export const faces = [
         id:5,
         image:"5.jpg",
         alt:"picture of a person",
-        size:"w-28 h-28 ",
+        size:"w-24 h-24 ",
         position:"tier5",
         border: "border-six border-yellow"
     },  
@@ -227,7 +227,7 @@ export const faces = [
         id:8,
         image:"2.jpg",
         alt:"picture of a person",
-        size:"w-28 h-28 ",
+        size:"w-24 h-24 ",
         position:"tier8",
         border: "border-six border-water"
     },  

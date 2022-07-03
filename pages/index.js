@@ -9,12 +9,12 @@ import { info, feature, faces } from '../info'
 const Index = () => {
     return(
         <>
-        <div className="container  space-y-12 flex flex-col mx-auto mt-32 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
+        <div className="container space-y-12 flex flex-col mx-auto mt-32 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row md:pb-44 md:pt-8">
             
             {/* HERO TEXT  */}
             
             <div className="flex flex-col space-y-8  md:w-1/2 ">
-                <h1 className=" text-purple leading-10	 text-center text-4xl font-poppins  md:text-5xl md:text-left">
+                <h1 className=" text-purple leading-10	 text-center text-4xl font-medium font-poppins  md:text-5xl md:text-left md:max-w-xl">
                     The ultimate college student app.
                 </h1>
                 <p className="font-montserat max-w-lg font-xl text-center md:text-left">Buddi is a college student exclusive app to connect with your campus and students everywhere.</p>
@@ -40,7 +40,7 @@ const Index = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden w-full  top-0 left-0 absolute h-full opacity-100 md:block">
+                <div className="hidden w-full  top-0 left-0 absolute h-full opacity-100 lg:block">
                     <div className="">
                         {faces.map(face=>(
                             <CircleImages key={face.id} size={face.size} position={face.position}  border={face.border} image={<Image src={`/assets/faces/${face.image}`} alt={face.alt} layout="fill" objectFit="cover"  />} />
