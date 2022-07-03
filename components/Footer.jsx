@@ -50,9 +50,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="h-px w-full bg-gray"></div>
-          <div className="flex flex-col-reverse gap-y-3  pt-4 md:pl-4 md:space-x-20 md:flex md:flex-row md:gap-y-0">
+          <div className="flex flex-col-reverse gap-y-3  pt-4 lg:pl-4 md:space-x-20 lg:flex lg:flex-row md:gap-y-2">
             <p className="text-gray font-nunito text-center text-sm md:text-base">© 2022 Buddi LLC, All Rights Reserved. </p>
-            <div className="flex flex-col items-center justify-center text-sm gap-y-1 md:space-x-2 md:text-base md:gap-y-0 md:flex-row">
+            <div className="flex flex-row items-center text-center justify-center text-xs gap-y-1 space-x-2 md:text-base md:space-x-1 md:gap-y-0 md:flex-row">
                 <div className="text-gray font-nunito">
                   <Link href="#">
                     Terms of Use |
@@ -63,7 +63,7 @@ const Footer = () => {
                     Privacy Policy |  
                   </Link>
                 </div>
-                <div className="text-gray font-nunito text-base">
+                <div className="text-gray font-nunito">
                   <Link href="#">
                     Community Guidelines
                   </Link>
