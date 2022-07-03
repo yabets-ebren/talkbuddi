@@ -63,47 +63,42 @@
 
 /* Home-page Hero Position */
 .tier1 {
-  top: 50%;
+  top: -10%;
   left: 10%;
   position: absolute;
 }
 .tier2 {
-  top: -20%;
-  right: 10%;
-  position: absolute;
-}
-.tier3 {
-  top: 33%;
+  top: 25%;
   left: 5%;
   position: absolute;
 }
+.tier3 {
+  top: 48%;
+  left: 15%;
+  position: absolute;
+}
 .tier4 {
-  top: 0;
+  bottom: 0;
   left: 10%;
   position: absolute;
 }
 .tier5 {
-  top: 0;
-  left: 10%;
+  top: -20%;
+  right: 15%;
   position: absolute;
 }
 .tier6 {
-  top: 0;
-  left: 10%;
+  top: 15%;
+  right: 10%;
   position: absolute;
 }
 .tier7 {
-  top: 0;
-  left: 10%;
+  top: 40%;
+  right: 20%;
   position: absolute;
 }
 .tier8 {
-  top: 0;
-  left: 10%;
-  position: absolute;
-}
-.tier1 {
-  top: 0;
-  left: 10%;
+  bottom: 10%;
+  right: 10%;
   position: absolute;
 }

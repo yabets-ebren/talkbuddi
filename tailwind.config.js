@@ -97,7 +97,8 @@ module.exports = {
         iphone: '6px 80px 8px 8px'
       },
       borderWidth:{
-        big: '30px'
+        big: '30px',
+        six:'6px'
       },
 
     },

@@ -171,33 +171,65 @@ export const faces = [
         id:1,
         image:"1.jpg",
         alt:"picture of a person",
-        size:"w-32 h-32",
+        size:"w-28 h-28 ",
         position:"tier1",
-        border: "border-8 border-purple"
+        border: "border-six border-purple"
     },
     {
         id:2,
-        image:"3.jpg",
+        image:"2.jpg",
         alt:"picture of a person",
-        size:"w-24 h-24",
-        position:"tier3",
-        border: "border-8 border-yellow"
+        size:"w-20 h-20",
+        position:"tier2",
+        border: "border-six border-orange"
     },
     {
         id:3,
-        image:"1.jpg",
+        image:"3.jpg",
         alt:"picture of a person",
-        size:"w-32 h-32",
-        position:"tier2",
-        border: "border-8 border-yellow"
+        size:"w-28 h-28 ",
+        position:"tier3",
+        border: "border-six border-green"
     },
     {
         id:4,
-        image:"",
+        image:"4.jpg",
         alt:"picture of a person",
-        size:"w-24 h-24",
-        position:"absolute bottom-0 right-0",
-        border: "border-8 border-skyblue"
+        size:"w-20 h-20",
+        position:"tier4",
+        border: "border-six border-red"
+    },  
+    {
+        id:5,
+        image:"5.jpg",
+        alt:"picture of a person",
+        size:"w-28 h-28 ",
+        position:"tier5",
+        border: "border-six border-yellow"
+    },  
+    {
+        id:6,
+        image:"6.jpg",
+        alt:"picture of a person",
+        size:"w-20 h-20",
+        position:"tier6",
+        border: "border-six border-light-orange"
+    },  
+    {
+        id:7,
+        image:"1.jpg",
+        alt:"picture of a person",
+        size:"w-16 h-16",
+        position:"tier7",
+        border: "border-six border-skyblue"
+    },  
+    {
+        id:8,
+        image:"2.jpg",
+        alt:"picture of a person",
+        size:"w-28 h-28 ",
+        position:"tier8",
+        border: "border-six border-water"
     },  
 
 ]

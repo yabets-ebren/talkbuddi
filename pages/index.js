@@ -6,7 +6,7 @@ import CircleImages from '../components/CircleImages'
 import { info, feature, faces } from '../info'
 
 
-const Index = ({data}) => {
+const Index = () => {
     return(
         <>
         <div className="container  space-y-12 flex flex-col mx-auto mt-32 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row">
@@ -29,8 +29,6 @@ const Index = ({data}) => {
             </div>
             
             {/* HERO IMAGES */}
-
-            {/* FIXME: MOBILE HEIGHT NEEDS A FIX */}
             <div className="relative w-full md:w-1/2">
                 <div className="w-full flex-shrink-0 flex items-center justify-center max-h-max-hero-height">
                     <div className="overflow-hidden relative  w-44 h-96" >
@@ -42,7 +40,7 @@ const Index = ({data}) => {
                         </div>
                     </div>
                 </div>
-                <div className=" w-full top-0 left-0 absolute h-full opacity-100">
+                <div className="hidden w-full  top-0 left-0 absolute h-full opacity-100 md:block">
                     <div className="">
                         {faces.map(face=>(
                             <CircleImages key={face.id} size={face.size} position={face.position}  border={face.border} image={<Image src={`/assets/faces/${face.image}`} alt={face.alt} layout="fill" objectFit="cover"  />} />
@@ -89,7 +87,7 @@ const Index = ({data}) => {
                     Click here to download
                 </Link>
             </p>
-            <p className="hidden bg-pink bg-skyblue bg-green text-green text-pink text-skyblue border-green border-skyblue border-pink">none:test</p>
+            {/* <p className="hidden border-six w-28 h-28 w-20 w-16 h-16 border-water h-20 border-light-orange bg-pink border-red border-orange bg-skyblue bg-green text-green text-pink text-skyblue border-green border-skyblue border-pink">none:test</p> */}
         </div>
 
         {/* ************** */}
