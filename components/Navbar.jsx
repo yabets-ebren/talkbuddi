@@ -11,8 +11,9 @@ const Navbar = () => {
   const router = useRouter()
   console.log(router.pathname)
   return (
-
-    <nav className="container  relative mx-auto py-2 shadow-big" >
+  
+    <div className="shadow-big">
+    <nav className="container  relative mx-auto py-2" >
         <div className="flex mx-auto w-90 justify-between items-center">
           <div className="scale-75 -ml-4 md:scale-100 md:ml-0">
             <button>
@@ -45,7 +46,7 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         <div className="md:hidden">
-          <ul onClick={() => (setOpen(false))} className={`absolute ${open ? "opacity-100" : "opacity-0"} t transition-all duration-500 text-gray flex flex-col items-center self-end py-8 pt-10 space-y-6 z-10 capitalize font-poppins font-medium bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
+          <ul onClick={() => (setOpen(false))} className={`absolute ${open ? "opacity-100" : "opacity-0"} t transition-all duration-500 text-gray flex flex-col items-center self-end py-8 pt-10 space-y-8 z-10 capitalize font-poppins font-normal bg-white sm:self-center w-full drop-shadow-xl`}>
               <li className={`${router.pathname == '/' ? 'active' : ""}`}><Link href="/">home</Link></li>
               <li><Link href="/#features">features</Link></li>
               <li className={`${router.pathname == '/careers' ? 'active' : ""}`}><Link href="/careers">careers</Link></li>
@@ -53,6 +54,8 @@ const Navbar = () => {
           </ul>
         </div>
     </nav>
+
+    </div>
   )
 }
 

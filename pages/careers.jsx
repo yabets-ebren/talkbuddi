@@ -14,8 +14,8 @@ const Careers = () => {
         <div className="container mx-auto flex flex-col-reverse md:flex-row">
             {/* HERO TEXT  */}
             <div className="flex flex-col justify-center  items-center text-center  md:w-1/2 ">
-              <h1 className="text-white text-4xl font-poppins pt-10 pb-6 md:text-5xl md:pt-0">Our Mission</h1>
-              <p className="text-2xl max-w-md font-montserat pb-10 mx-auto md:text-4xl md:pb-0">Buddi seeks to create connections, encourage transparency and faciliate comfort within the college student community</p>
+              <h1 className="text-white text-4xl font-poppins pt-10 pb-6 md:text-4xl lg:text-5xl md:pt-0">Our Mission</h1>
+              <p className="text-2xl max-w-md font-montserat pb-10 px-2 mx-auto md:text-3xl lg:text-4xl md:pb-0">Buddi seeks to create connections, encourage transparency and faciliate comfort within the college student community</p>
             </div>
             {/* HERO IMAGE */}
             <div className="w-full h-96 md:w-1/2 md:h-hero">
