@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import Head from "next/head"
 import Image from "next/image"
 import Bars from "../components/Bars"
 import { FAQ } from '../info'
@@ -6,11 +7,14 @@ import { FAQ } from '../info'
 const Contact = () => {
   return (
     <>
+      <Head>
+            <title>Talkbuddi - Contact</title>
+      </Head>
       <div className="mx-auto container w-90 flex flex-col mt-32 md:flex-row shdow-big">
         <motion.div
-        initial={{x:'-100%', opacity:'0%'}} 
+        initial={{x:'-50%', opacity:'0%'}} 
         animate={{x:'0%', opacity:'100%'}}
-        transition={{ duration:1.5, type:'tween'}}
+        transition={{ duration:1, type:'tween'}}
         className="flex flex-col justify-center items-center px-4 space-y-10 text-center md:w-1/2 lg:px-20 md:items-start">
           <h1 className="text-4xl  font-medium font-poppins text-purple md:text-5xl md:text-start md:max-w-xl">We are here to answer your questions!</h1>
           <p className="max-w-sm text-gray md:text-start font-montserat">Please fill out the form to the right to reach our team! Please be as detailed as possible to receive the quickest response time possible.</p>
