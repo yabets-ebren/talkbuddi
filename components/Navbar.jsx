@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
 
   const[open, setOpen] = useState(false);
-  const transition = {duration:2, type:'spring'};
+  const transition = {duration:2, type:'tween'};
 
 
   const router = useRouter()

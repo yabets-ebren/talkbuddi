@@ -1,4 +1,5 @@
 
+import { motion } from "framer-motion";
 import Image from "next/image"
 import Link from "next/link"
 import { FaInstagram, FaTiktok, FaLinkedin  } from 'react-icons/fa';
@@ -8,7 +9,11 @@ const Footer = () => {
   return (
     <>
         <div className="h-10 w-full bg-purple"></div>
-        <div className=" flex-column container w-90 mx-auto pb-4  py-1 space-y-1 md:pt-16 md:px-6 ">
+        <motion.div 
+          initial={{opacity:'0%'}}
+          animate={{opacity:'100%'}}
+          transition={{duration:2, type:'tween'}}
+          className=" flex-column container w-90 mx-auto pb-4  py-1 space-y-1 md:pt-16 md:px-6 ">
           <div className="flex flex-col w-full gap-y-3 justify-between items-center py-5 md:flex md:flex-row md:gap-y-0">
             <div className="flex flex-col space-y-1 md:pl-4 ">
                 <button className=" scale-75 md:scale-100">
@@ -71,7 +76,7 @@ const Footer = () => {
             </div>
 
           </div>
-        </div>
+        </motion.div>
 
     </>
       

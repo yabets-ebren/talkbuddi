@@ -183,21 +183,34 @@ const Index = () => {
             className="mt-2 h-2 bg-purple w-full self-center"></motion.div>
             <p className=" font-montserat font-xl text-black text-center px-4  pt-2">Click on each feature to learn more</p>
         </div>
-        <div className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 prespective-100 md:grid-cols-2 md:gap-x-10 md:gap-y-10 md:w-90 md:mt-16 md:pb-40">
-            {feature.map(feat =>(
-                <Board key={feat.id} image={<Image src={`/assets/features/${feat.image}`} alt={feat.alt} layout="fill" priority/>} title={feat.title} bgColor={feat.bgColor} backTitle={feat.backTitle} backdesc={feat.backDesc} fontColor={feat.fontColor} borderColor={feat.borderColor}/>
-            ))}
-        </div>
+        <motion.div 
+             initial={{opacity:'0%'}}
+             whileInView={{opacity:"100%"}}
+             viewport={{ once: true }}
+             transition={{duration:1.8}}
+            className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 prespective-100 md:grid-cols-2 md:gap-x-10 md:gap-y-10 md:w-90 md:mt-16 md:pb-40">
+                {feature.map(feat =>(
+                    <Board key={feat.id} image={<Image src={`/assets/features/${feat.image}`} alt={feat.alt} layout="fill" priority/>} title={feat.title} bgColor={feat.bgColor} backTitle={feat.backTitle} backdesc={feat.backDesc} fontColor={feat.fontColor} borderColor={feat.borderColor}/>
+                ))}
+
+        </motion.div>
 
         {/* Bottom Call To Action */}
 
-        <div className="mt-16 h-60 bg-purple w-full flex flex-col items-center justify-center text-center md:mt-32">
-            <h2 className="text-white text-2xl font-medium pb-2 md:text-3xl "> Ready to join the hype?</h2>
-            <p className="text-yellow text-xl underline">
-                <Link href="#">
-                    Click here to download
-                </Link>
-            </p>
+        <div className="mt-16 h-60 bg-purple w-full flex flex-col items-center justify-center md:mt-32">
+            <motion.div 
+                 initial={{scale:'0%'}}
+                 whileInView={{scale:"100%"}}
+                 viewport={{ once: true }}
+                 transition={{duration:1}}
+                className="flex flex-col items-center justify-center text-center">
+                <h2 className="text-white text-2xl font-medium pb-2 md:text-3xl "> Ready to join the hype?</h2>
+                <p className="text-yellow text-xl underline">
+                    <Link href="#">
+                        Click here to download
+                    </Link>
+                </p>
+            </motion.div>
             {/* <p className="hidden border-six w-28 h-28 w-20 w-16 h-16 border-water h-20 border-light-orange bg-pink border-red border-orange bg-skyblue bg-green text-green text-pink text-skyblue border-green border-skyblue border-pink">none:test</p> */}
         </div>
 
