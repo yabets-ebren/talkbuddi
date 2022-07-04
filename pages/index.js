@@ -3,7 +3,7 @@ import Link from "next/link";
 import Board from "../components/Board";
 import Card from "../components/Card";
 import CircleImages from '../components/CircleImages'
-import { info, feature, faces } from '../info'
+import { info, feature } from '../info'
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -21,8 +21,8 @@ const Index = () => {
             <meta property="og:title" content="Talkbuddi - Home" />
             <meta property="og:description" content="Description goes here" />
         </Head>
-        <div className="container space-y-12 flex flex-col mx-auto mt-32 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row md:pb-44 md:pt-8">
-            
+        
+        <div className="container space-y-12 flex flex-col mx-auto mt-32 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row md:pb-44 md:pt-8"> 
             {/* HERO TEXT  */}
             
             <motion.div

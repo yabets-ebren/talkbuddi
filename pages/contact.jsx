@@ -3,8 +3,22 @@ import Head from "next/head"
 import Image from "next/image"
 import Bars from "../components/Bars"
 import { FAQ } from '../info'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <>
       <Head>
@@ -32,7 +46,7 @@ const Contact = () => {
           animate={{opacity:'100%'}}
           transition={{delay:1, duration:1, type:'tween'}}
           className="flex flex-col p-6 bg-yellow rounded-md md:w-1/2 md:px-8 lg:px-16 md:py-15">
-          <form className="flex flex-col gap-y-6 lg:gap-y-12" action="">
+          <form className="flex flex-col gap-y-6 lg:gap-y-12" ref={form} onSubmit={sendEmail}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 md:gap-x-12 lg:gap-y-0">
               <div className="flex flex-col-reverse gap-y-2   font-montserat">
                 <input className="p-2 rounded-md peer focus:outline-none border-transparent border-2 transition-all focus:border-purple focus:border-2 " type="text" id="fname"  required/>

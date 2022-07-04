@@ -20,7 +20,6 @@ const Careers = () => {
             <meta name="keywords" content="college mental-health baz" />
             <meta property="og:title" content="Talkbuddi - Careers" />
             <meta property="og:description" content="Description goes here" />
-
       </Head>
       <div className="bg-yellow mt-24 mb-40 shadow-big">
         <div className="container mx-auto flex flex-col-reverse md:flex-row">
