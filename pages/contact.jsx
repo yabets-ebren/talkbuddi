@@ -4,10 +4,15 @@ import Image from "next/image"
 import Bars from "../components/Bars"
 import { FAQ } from '../info'
 import emailjs from '@emailjs/browser'
+import { useRef, useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
+  // EMAIL SERVICE WITH EMAIL JS
   const form = useRef();
+  const [sent, setSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -15,10 +20,17 @@ const Contact = () => {
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
       .then((result) => {
           console.log(result.text);
+          setSent(true)
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset()
+
   };
+
+  // NOTIFY USERS
+  const notify = () => toast("Wow so easy!");
+
   return (
     <>
       <Head>
@@ -71,6 +83,10 @@ const Contact = () => {
             </div>
             <button type="submit" className="bg-purple px-4 py-2 font-montserat w-fit text-white rounded-md self-center">Submit</button>
           </form>
+          <div>
+        <button onClick={notify}>Notify!</button>
+        <ToastContainer />
+      </div>
         </motion.div>
       </div>
       <div className="text-center mt-60 flex flex-col items-center justify-center">
