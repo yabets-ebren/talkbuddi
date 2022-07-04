@@ -2,22 +2,27 @@ import Image from "next/image"
 import Link from "next/link"
 import { useRouter } from "next/router";
 import { useState } from "react"
-
+import { motion } from "framer-motion";
 const Navbar = () => {
 
   const[open, setOpen] = useState(false);
+  const transition = {duration:2, type:'spring'};
 
 
   const router = useRouter()
   return (
   
     <div className="shadow-big">
-    <nav className="container  relative mx-auto py-2" >
+    <motion.nav
+     initial={{opacity:'0%'}}
+     animate={{opacity:'100%'}}
+     transition={transition}  
+     className="container  relative mx-auto py-2" >
         <div className="flex mx-auto w-90 justify-between items-center">
           <div className="scale-75 -ml-4 md:scale-100 md:ml-0">
             <button>
               <Link href="/">
-                <Image className="cursor-pointer" src="/assets/buddi_logo.png" width={188} height={66} objectFit="fill"  alt="logo"/>
+                <Image className="cursor-pointer" src="/assets/buddi_logo.png" width={188} height={66} objectFit="fill" priority alt="logo"/>
               </Link>
             </button>
           </div>
@@ -52,7 +57,7 @@ const Navbar = () => {
               <li className={`${router.pathname == '/contact' ? 'active' : ""}`}><Link href="/contact">contact</Link></li>
           </ul>
         </div>
-    </nav>
+    </motion.nav>
 
     </div>
   )
