@@ -46,7 +46,7 @@ const Index = () => {
             <div className="relative w-full md:w-1/2">
                 <div className="w-full flex-shrink-0 flex items-center justify-center max-h-max-hero-height">
                     <motion.div
-                     transition={{delay:1, duration:0.7, type:'spring'}}
+                     transition={{delay:0.5, duration:0.7, type:'spring'}}
                      initial={{ scale:'0%',}}
                      animate={{ scale:'100%'}}
                      className="overflow-hidden relative  w-44 h-96 z-10" >
@@ -62,7 +62,7 @@ const Index = () => {
                     <motion.div
                         initial={{opacity:'0'}}
                         animate={{opacity:'100'}}
-                        transition={{delay:1.15, duration:1.5, type:'spring'}}
+                        transition={{delay:1, duration:1.5, type:'spring'}}
                         >
                         <CircleImages position="tier1" size="w-24 h-24" border="border-six border-purple" image={<Image src={`/assets/faces/1.jpg`} alt="picture of a person" layout="fill" objectFit="cover" priority />} />
                     </motion.div>
