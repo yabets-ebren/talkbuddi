@@ -4,16 +4,26 @@ import Board from "../components/Board";
 import Card from "../components/Card";
 import CircleImages from '../components/CircleImages'
 import { info, feature, faces } from '../info'
-
+import { motion } from "framer-motion";
 
 const Index = () => {
+
+    const transition = {duration:2, type:'spring'};
+
     return(
         <>
         <div className="container space-y-12 flex flex-col mx-auto mt-32 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row md:pb-44 md:pt-8">
             
             {/* HERO TEXT  */}
             
-            <div className="flex flex-col space-y-8  md:w-1/2 ">
+            <motion.div
+            animate={{scale:'100%'}}
+            initial={{scale: '0%'}}
+            // whileInView={{left: '0%'}}
+            
+            transition={transition}
+
+            className="flex flex-col space-y-8  md:w-1/2 ">
                 <h1 className=" text-purple leading-10	 text-center text-4xl font-medium font-poppins  md:text-5xl md:text-left md:max-w-xl">
                     The ultimate college student app.
                 </h1>
@@ -26,7 +36,7 @@ const Index = () => {
                         </button>
                     </Link>
                 </div>
-            </div>
+            </motion.div>
             
             {/* HERO IMAGES */}
             <div className="relative w-full md:w-1/2">
