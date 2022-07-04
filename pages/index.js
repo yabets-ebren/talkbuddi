@@ -32,10 +32,10 @@ const Index = () => {
             <div className="relative w-full md:w-1/2">
                 <div className="w-full flex-shrink-0 flex items-center justify-center max-h-max-hero-height">
                     <div className="overflow-hidden relative  w-44 h-96 z-10" >
-                        <Image className="z-10" src="/assets/newiphone.png" alt="image of an iphone" layout="fill" objectFit='fill'/>
+                        <Image className="z-10" src="/assets/newiphone.png" alt="image of an iphone" layout="fill" objectFit='fill' priority/>
                         <div className=" bg-yellow z-1 m-2 flex items-center justify-center rounded-2xl w-40 h-hiphone">
                             <div className="relative w-24 h-24 flex items-center justify-center">
-                                <Image src="/assets/vertLogo.png" alt="buddi logo"  layout="fill"/>
+                                <Image src="/assets/vertLogo.png" alt="buddi logo"  layout="fill" priority/>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const Index = () => {
                 <div className="hidden w-full  top-0 left-0 absolute h-full opacity-100 lg:block ">
                     <div>
                         {faces.map(face=>(
-                            <CircleImages key={face.id} size={face.size} position={face.position}  border={face.border} image={<Image src={`/assets/faces/${face.image}`} alt={face.alt} layout="fill" objectFit="cover"  />} />
+                            <CircleImages key={face.id} size={face.size} position={face.position}  border={face.border} image={<Image src={`/assets/faces/${face.image}`} alt={face.alt} layout="fill" objectFit="cover" priority />} />
                         ))}
                     </div>
                 </div>
@@ -60,9 +60,9 @@ const Index = () => {
             <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide mt-24 md:text-4xl md:mt-32">Why join Buddi?</h2>
             <p className=" font-montserat w-90 mx-auto font-xl text-black text-center px-4 pt-4">Here are a few reasons why we're awesome</p>
         </div>
-        <div className="mt-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:w-90 md:mt-16 ">
+        <div className="mt-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:w-90 md:mt-16 md:pb-40">
             {info.map(inf=>(
-                <Card key={inf.id} head={inf.heading} desc={inf.desc} image={<Image src={`/assets/about/${inf.image}`} alt={inf.alt} layout="fill"/>} />
+                <Card key={inf.id} head={inf.heading} desc={inf.desc} image={<Image src={`/assets/about/${inf.image}`} alt={inf.alt} layout="fill" priority/>} />
             ))}
         </div>
 
@@ -72,9 +72,9 @@ const Index = () => {
             <h2 className="font-poppins font-medium text-3xl text-black text-center tracking-wide mt-24 md:text-4xl md:mt-32">Our Features</h2>
             <p className=" font-montserat font-xl text-black text-center px-4  pt-2">Click on each feature to learn more</p>
         </div>
-        <div className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 prespective-100 md:grid-cols-2 md:gap-x-10 md:gap-y-10 md:w-90 md:mt-16">
+        <div className="mt-16 grid grid-cols-1 container mx-auto first:hidden gap-y-12 prespective-100 md:grid-cols-2 md:gap-x-10 md:gap-y-10 md:w-90 md:mt-16 md:pb-40">
             {feature.map(feat =>(
-                <Board key={feat.id} image={<Image src={`/assets/features/${feat.image}`} alt={feat.alt} layout="fill"/>} title={feat.title} bgColor={feat.bgColor} backTitle={feat.backTitle} backdesc={feat.backDesc} fontColor={feat.fontColor} borderColor={feat.borderColor}/>
+                <Board key={feat.id} image={<Image src={`/assets/features/${feat.image}`} alt={feat.alt} layout="fill" priority/>} title={feat.title} bgColor={feat.bgColor} backTitle={feat.backTitle} backdesc={feat.backDesc} fontColor={feat.fontColor} borderColor={feat.borderColor}/>
             ))}
         </div>
 
