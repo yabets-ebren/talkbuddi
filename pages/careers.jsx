@@ -20,7 +20,7 @@ const Careers = () => {
             {/* HERO IMAGE */}
             <div className="w-full h-96 md:w-1/2 md:h-hero">
                   <div className="relative w-full h-full" >
-                      <Image src="/assets/college_students.png" alt="college students" layout="fill" objectFit='cover'/>
+                      <Image src="/assets/college_students.png" alt="college students" layout="fill" objectFit='cover' priority/>
                   </div>
             </div>
         </div>
