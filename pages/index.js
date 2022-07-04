@@ -15,6 +15,11 @@ const Index = () => {
         <>
         <Head>
             <title>Talkbuddi - Home</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="description" content="Talkbuddi..." />
+            <meta name="keywords" content="college mental-health baz" />
+            <meta property="og:title" content="Talkbuddi - Home" />
+            <meta property="og:description" content="Description goes here" />
         </Head>
         <div className="container space-y-12 flex flex-col mx-auto mt-32 mb-2 items-center w-90 md:pl-12 md:space-y-0 md:flex-row md:pb-44 md:pt-8">
             

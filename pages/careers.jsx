@@ -3,6 +3,7 @@ import { team, volunteer } from "../info"
 import dynamic from 'next/dynamic'
 import Bars from "../components/Bars";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const CircleImages = dynamic(() => import("../components/CircleImages"), {
   ssr: false,
@@ -12,6 +13,15 @@ const Careers = () => {
   return (
 
     <>
+     <Head>
+            <title>Talkbuddi - Careers</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="description" content="Talkbuddi..." />
+            <meta name="keywords" content="college mental-health baz" />
+            <meta property="og:title" content="Talkbuddi - Careers" />
+            <meta property="og:description" content="Description goes here" />
+
+      </Head>
       <div className="bg-yellow mt-24 mb-40 shadow-big">
         <div className="container mx-auto flex flex-col-reverse md:flex-row">
             {/* HERO TEXT  */}

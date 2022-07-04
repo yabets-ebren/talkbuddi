@@ -9,6 +9,11 @@ const Contact = () => {
     <>
       <Head>
             <title>Talkbuddi - Contact</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="description" content="Talkbuddi..." />
+            <meta name="keywords" content="college mental-health baz" />
+            <meta property="og:title" content="Talkbuddi - Contact" />
+            <meta property="og:description" content="Description goes here" />
       </Head>
       <div className="mx-auto container w-90 flex flex-col mt-32 md:flex-row shdow-big">
         <motion.div
