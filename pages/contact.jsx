@@ -76,7 +76,7 @@ const Contact = () => {
                 <label for='subject' className="font-semibold text-white peer-focus:text-purple" htmlFor="subject" aria-required >Contact Reason:</label>
               </div>
             <div className="flex flex-col-reverse gap-y-2   font-montserat">
-              <textarea type="text" className="rounded-md resize-none p-2 peer focus:outline-none border-transparent border-2 transition-all focus:border-purple focus:border-2" rows={6} required/>
+              <textarea type="text" className="rounded-md resize-none p-2 peer focus:outline-none border-transparent border-2 transition-all focus:border-purple focus:border-2" name="message" rows={6} required/>
               <label className="font-semibold text-white peer-focus:text-purple" htmlFor="desc">Description:</label>
             </div>
             <button type="submit" className="bg-purple px-4 py-2 font-montserat w-fit text-white rounded-md self-center">Submit</button>

@@ -88,22 +88,22 @@ export const team = [
     },
     {
         id:2,
+        name:"Jack Mitchell",
+        title:"COO & Director, Campus Ambassadors",
+        image:"",
+        alt:"picture of a person"
+    },
+    {
+        id:3,
         name:"Emma Winikow",
         title:"Advisor",
         image:"",
         alt:"picture of a person"
     },
     {
-        id:3,
+        id:4,
         name:"Emme Creager",
         title:"Director, Buddi for Psych",
-        image:"",
-        alt:"picture of a person"
-    },
-    {
-        id:4,
-        name:"Jack Mitchell",
-        title:"Director, Campus Ambassadors",
         image:"",
         alt:"picture of a person"
     },
