@@ -8,7 +8,7 @@ import { FaInstagram, FaTiktok, FaLinkedin  } from 'react-icons/fa';
 const Footer = () => {
   return (
     <>
-        <div className="h-10 w-full bg-purple"></div>
+        <div className="h-2 w-full bg-purple"></div>
         <motion.div 
           initial={{opacity:'0%'}}
           animate={{opacity:'100%'}}
