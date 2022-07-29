@@ -3,33 +3,35 @@ import moment from 'moment'
 import Link from 'next/link'
 
 const Blogcard = ({post}) => {
-    console.log(post)
+    console.log()
   return (
-      <div className='shadow-big  rounded-md mb-8 cursor-pointer transition duration-700 hover:scale-105 hover:shadow-2xl'>
+      <div className='shadow-big  rounded-md mb-8 cursor-pointer transition duration-700 hover:shadow-2xl'>
        
         <Link href={`/blog/${post.slug}`}>
             <div>
-                <div className='relative overflow-hidden shadow-lg pb-80 mb-6'>
+                <div className=' relative overflow-hidden shadow-lg pb-80 mb-6'>
                     <img 
                     src={post.featuredImage.url}
                     alt={post.title}
-                    className='h-80 object-cover w-full object-top absolute rounded-md'
+                    className=' object-cover w-full object-top absolute rounded-md h-96'
                     />
                 </div>
-                <div className=' px-4 flex items-center justify-start gap-x-3'>
-                    <div>
-                        <div className='flex items-center justify-center mb-4'>
-                            <img
-                                src={post.author.photo.url}
-                                height='10px'
-                                width='25px'
-                                className='rounded-full object-cover'
-                            />
+                <div className=' px-4 flex items-center justify-start gap-x-4 pb-2'>
+                    <div className='flex items-center justify-center gap-x-2 '>
+                        <div className='flex items-center justify-center'>
+                                <img
+                                    src={post.author.photo.url}
+                                    className='rounded-full object-cover w-7 h-7'
+                                />
                         </div>
+                        <p className='text-gray text-sm capitalize font-poppins'>{post.author.name}</p>
                     </div>
-                    <div className='px-10 py-6'><h1>{post.categories.name}</h1></div>
-                    <div><p className='text-sm uppercase text-gray'>{moment(post.createdAt).format('MMM DD, YYYY')}</p></div>
+                    <div className='p-1 cursor-pointer text-xs bg-light-gray text-gray uppercase rounded-sm hover:shadow-md'>{post.categories[0].name}</div>
+                    <div><p className='text-sm uppercase text-gray font-sm font-poppins self-end'>{moment(post.createdAt).format('MMM DD, YYYY')}</p></div>
                 </div>
+
+                <h1 className='pl-3 capitalize font-semibold font-montserat text-2xl pb-3 md:text-3xl'>{post.title}</h1>
+                <p className='pl-3 text-gray pb-6'>{post.snippet}</p>
 
             </div>
         </Link>
