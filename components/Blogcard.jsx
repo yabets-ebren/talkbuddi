@@ -26,7 +26,7 @@ const Blogcard = ({post}) => {
                         </div>
                         <p className='text-gray text-sm capitalize font-poppins'>{post.author.name}</p>
                     </div>
-                    <div className='p-1 cursor-pointer text-xs bg-light-gray text-gray uppercase rounded-sm hover:shadow-md'>{post.categories[0].name}</div>
+                    <div className='px-2 py-1 cursor-pointer text-xs bg-light-gray text-gray uppercase rounded-sm transition ease-in-out duration-150 hover:bg-black hover:text-white'>{post.categories[0].name}</div>
                     <div><p className='text-sm uppercase text-gray font-sm font-poppins self-end'>{moment(post.createdAt).format('MMM DD, YYYY')}</p></div>
                 </div>
 

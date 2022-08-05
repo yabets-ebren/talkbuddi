@@ -30,7 +30,7 @@ const Blogwidget = ( { categories, slug}) => {
               />
         </div>
         <div className='flex flex-col items-start gap-y-1'>
-          <p className='p-1 cursor-pointer text-xs bg-light-gray text-gray uppercase rounded-sm hover:shadow-md'>{post.categories[0].name}</p>
+          <p className='px-2 py-1 cursor-pointer text-xs bg-light-gray text-gray uppercase rounded-sm transition ease-in-out duration-150 hover:bg-black hover:text-white'>{post.categories[0].name}</p>
 
           <h4 className='font-semibold font-montserat cursor-pointer'>{post.title}</h4>
 

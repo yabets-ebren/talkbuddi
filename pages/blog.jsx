@@ -13,7 +13,7 @@ const blog = ( {posts}) => {
           {posts.map((post, index) => <Blogcard post={post.node} key={post.title} />)}
         </div>
         <div className='col-span-1 md:col-span-4'>
-          <div className='relative top-8 md:sticky'>
+          <div className='relative top-8 pt-10 md:sticky'>
             <Categories/>
             <Blogwidget/>
           </div>
