@@ -5,14 +5,13 @@ import { getPostDetails, getPosts } from '../../services'
 
 
 const BlogDetails = ({posts}) => {
-    console.log("here "+posts.categories.map((category) => category.slug))
   return (
     <div className='container mx-auto px-10 my-12 max-w-6xl'>
-        <div className='grid grid-cols-1 md:grid-cols-12 gap-12'>
-            <div className=' col-span-1 md:col-span-8'>
+        <div className='grid grid-cols-1 gap-y-12'>
+            <div className=' col-span-1'>
                 <PostDetail posts={posts} />
             </div>
-            <div className='col-span-1 md:col-span-4'>
+            <div className='col-span-1'>
                 <Blogwidget slug={posts.slug}  categories={posts.categories.map((category) => category.slug)}/>
             </div>
         </div>

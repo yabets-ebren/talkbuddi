@@ -57,7 +57,8 @@ module.exports = {
       fontFamily: {
         poppins: "'Poppins', sans-serif",
         nunito: "'Nunito', sans-serif",
-        montserat: "'Montserrat', sans-serif"
+        montserat: "'Montserrat', sans-serif",
+        manrope:"'Manrope', sans-serif"
       },
       colors:{
         'purple': '#5C35FA',
