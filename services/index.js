@@ -40,12 +40,48 @@ export const getPosts =  async () => {
     return result.blogsConnection.edges
 };
 
+export const getPostDetails =  async (slug) => {
+  const query = gql`
+  query GetPostDetails($slug: String!) {
+    blog(where: {slug: $slug}){
+            createdAt
+            slug
+            title
+            snippet
+            featuredImage {
+              url
+            }
+            categories {
+              name 
+              slug
+            }
+            content{
+              raw
+            }
+            author {
+              bio
+              name
+              id
+              photo {
+                url
+              }
+            }
+          }
+        }
+    
+  `
+
+  const result = await request(graphqlAPI, query, { slug });
+
+  return result.blog
+};
+
 export const getRecentPosts = async () => {
   const query = gql`
   query GetPostDetails() {
     blogs(
       orderBy: createdAt_ASC
-      last: 3
+      last: 2
     ){
       title
       featuredImage {
@@ -64,10 +100,10 @@ export const getRecentPosts = async () => {
 
 export const getSimilarPosts = async () => {
   const query = gql`
-  query GetPostDetails($slug: String, $categories: [String]) {
+  query GetPostDetails($slug: String, $categories: [String!]) {
     blogs(
   where: {slug_not: $slug, AND: {categories_some: {slug_in: $categories}}}
-      last: 3
+      last: 2
     ){
       title
       featuredImage {

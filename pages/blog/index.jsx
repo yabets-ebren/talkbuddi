@@ -1,8 +1,8 @@
 import React from 'react'
-import Blogcard from '../components/Blogcard'
-import Blogwidget from '../components/Blogwidget'
-import Categories from '../components/Categories'
-import { getPosts } from '../services'
+import Blogcard from '../../components/Blogcard'
+import Blogwidget from '../../components/Blogwidget'
+import Categories from '../../components/Categories'
+import { getPosts } from '../../services'
 
 const blog = ( {posts}) => {
   return (
